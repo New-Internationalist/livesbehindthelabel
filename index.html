@@ -17,7 +17,7 @@
 		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
 		<meta name="theme-color" content="#ffffff">
 
-		<link rel="stylesheet" href="/assets/css/app.css">
+		<link rel="stylesheet" href="assets/css/app.css">
 
 		<meta property="og:type" content="website">
 		<meta property="og:title" name="twitter:title" content="">
@@ -36,7 +36,11 @@
 				if (b.indexOf('mobi') > 0 || b.indexOf('blackberry') > 0 || b.indexOf('palm') > 0) h.className += ' mobile';
 				else h.className += ' desktop';
 			})(document.documentElement, navigator.userAgent.toLowerCase())
+            
+        
+            
 		</script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
 		<!--[if lte IE 9]>
 			<script>
@@ -49,41 +53,58 @@
 
 	</head>
 	<body class="page-home">
+       
 
-		<div class="banner">
-			<div class="banner__background js-parallax"></div>
-			<img src="/assets/img/media_banner.svg" alt="Media Logo" />
-			<img src="/assets/img/logo_banner.svg" alt="Sewing Society Logo" />
-			<p>Stories from the Garement Factories of Bangladesh</p>
-			<button class="banner__play" data-open="video-modal" type="button">
-				<img src="/assets/img/play_banner.svg" />
-			</button>
-		</div>
-
-		<div class="home-header row">
-			<div class="medium-4 columns">
-				<img class="float-left" src="/assets/img/media_header.svg" alt="Media Logo" />
-			</div>
-			<div class="medium-4 columns text-center">
-				<img src="/assets/img/logo_home.svg" alt="Sewing Society Logo" />
-			</div>
-			<div class="medium-4 columns menu-icons">
-				<a href="#"><img src="/assets/img/about.svg" /><span class="show-for-sr">About</span></a>
-				<a href="#"><img src="/assets/img/share_tw.svg" /><span class="show-for-sr">Twitter</span></a>
-				<a href="#"><img src="/assets/img/share_fb.svg" /><span class="show-for-sr">Facebook</span></a>
-				<a href="#"><img src="/assets/img/sh_bag.svg" /><span class="show-for-sr">??</span></a>
-			</div>
-		</div>
-
-		<div class="row">
+<!-- The Modal -->
+<div id="myModal" class="modal">
+<span class="close">&times;</span>
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="row">
+        
+        <div class="modal-video">
+            
+            <div id="bg-video" data-plyr="play" data-type="vimeo" data-video-id="186436301"></div>
+        </div>
 			<div class="columns"><div class="card card--main">
 				<h1>We are the garment workers of Bangladesh</h1>
 				<p class="claim">
 					We are the workshop of the world. H+M, Gap, Mango, Zara, Primark etc -<br>
-					<b>We make your clothes</b>
+					<a href="#" id="this-btn-open"><b>play video intro</b></a> 
 				</p>
-			</div></div>
+			</div>
+        </div>
 		</div>
+      
+  </div>
+    
+
+</div>
+
+		<!--<div class="banner">
+			<div class="banner__background js-parallax"></div>
+			<img src="assets/img/media_banner.svg" alt="Media Logo" />
+			<img src="assets/img/logo_banner.svg" alt="Sewing Society Logo" />
+			<p>Stories from the Garement Factories of Bangladesh</p>
+			
+		</div>-->
+
+		<div class="home-header row">
+			<div class="medium-4 columns">
+				<img class="float-left" src="assets/img/media_header.svg" alt="Media Logo" />
+			</div>
+			<div class="medium-4 columns text-center">
+				<img src="assets/img/logo_home.svg" alt="Sewing Society Logo" />
+			</div>
+			<div class="medium-4 columns menu-icons">
+				<a href="#" id="myBtn"><img src="assets/img/about.svg" /><span class="show-for-sr">About</span></a>
+				<a href="#"><img src="assets/img/share_tw.svg" /><span class="show-for-sr">Twitter</span></a>
+				<a href="#"><img src="assets/img/share_fb.svg" /><span class="show-for-sr">Facebook</span></a>
+				<a href="#"><img src="assets/img/sh_bag.svg" /><span class="show-for-sr">??</span></a>
+			</div>
+		</div>
+
+		
 
 		<section class="stories">
 
@@ -93,8 +114,8 @@
 
 				<div class="medium-4 columns"><div class="garment">
 					<a href="story.html#panel1">
-						<img src="/assets/img/sharif_hover.jpg" />
-						<img class="appear-on-hover" src="/assets/img/sharif.jpg" />
+						<img src="assets/img/sharif_hover.jpg" />
+						<img class="appear-on-hover" src="assets/img/sharif.jpg" />
 						<div class="garment__title">
 							<p>Hijra</p>
 							<p class="appear-on-hover">
@@ -107,8 +128,8 @@
 
 				<div class="medium-4 columns"><div class="garment">
 					<a href="story.html#panel2">
-						<img src="/assets/img/ema_hover.jpg" />
-						<img class="appear-on-hover" src="/assets/img/ema.jpg" />
+						<img src="assets/img/ema_hover.jpg" />
+						<img class="appear-on-hover" src="assets/img/ema.jpg" />
 						<div class="garment__title">
 							<p>The Fashionista</p>
 							<p class="appear-on-hover">
@@ -121,8 +142,8 @@
 
 				<div class="medium-4 columns"><div class="garment">
 					<a href="story.html#panel3">
-						<img src="/assets/img/shampa_hover.jpg" />
-						<img class="appear-on-hover" src="/assets/img/shampa.jpg" />
+						<img src="assets/img/shampa_hover.jpg" />
+						<img class="appear-on-hover" src="assets/img/shampa.jpg" />
 						<div class="garment__title">
 							<p>Dancing Dreams</p>
 							<p class="appear-on-hover">
@@ -139,8 +160,8 @@
 
 				<div class="medium-4 columns"><div class="garment">
 					<a href="story.html#panel4">
-						<img src="/assets/img/laizu_hover.jpg" />
-						<img class="appear-on-hover" src="/assets/img/laizu.jpg" />
+						<img src="assets/img/laizu_hover.jpg" />
+						<img class="appear-on-hover" src="assets/img/laizu.jpg" />
 						<div class="garment__title">
 							<p>All the single ladies</p>
 							<p class="appear-on-hover">
@@ -153,8 +174,8 @@
 
 				<div class="medium-4 columns"><div class="garment">
 					<a href="story.html#panel5">
-						<img src="/assets/img/nurabu_hover.jpg" />
-						<img class="appear-on-hover" src="/assets/img/nurabu.jpg" />
+						<img src="assets/img/nurabu_hover.jpg" />
+						<img class="appear-on-hover" src="assets/img/nurabu.jpg" />
 						<div class="garment__title">
 							<p>The Survivor</p>
 							<p class="appear-on-hover">
@@ -167,8 +188,8 @@
 
 				<div class="medium-4 columns"><div class="garment">
 					<a href="story.html#panel6">
-						<img src="/assets/img/nazma_hover.jpg" />
-						<img class="appear-on-hover" src="/assets/img/nazma.jpg" />
+						<img src="assets/img/nazma_hover.jpg" />
+						<img class="appear-on-hover" src="assets/img/nazma.jpg" />
 						<div class="garment__title">
 							<p>The Leader</p>
 							<p class="appear-on-hover">
@@ -190,7 +211,7 @@
 			<div class="row">
 
 				<div class="medium-3 columns gallery-item">
-					<img src="/assets/img/gallery_placeholder.jpg" />
+					<img src="assets/img/gallery_placeholder.jpg" />
 					<p>
 						Name Surname<br>
 						<span>8$/hour</span>
@@ -198,7 +219,7 @@
 				</div>
 
 				<div class="medium-3 columns gallery-item">
-					<img src="/assets/img/gallery_placeholder.jpg" />
+					<img src="assets/img/gallery_placeholder.jpg" />
 					<p>
 						Name Surname<br>
 						<span>8$/hour</span>
@@ -206,7 +227,7 @@
 				</div>
 
 				<div class="medium-3 columns gallery-item">
-					<img src="/assets/img/gallery_placeholder.jpg" />
+					<img src="assets/img/gallery_placeholder.jpg" />
 					<p>
 						Name Surname<br>
 						<span>8$/hour</span>
@@ -214,7 +235,7 @@
 				</div>
 
 				<div class="medium-3 columns gallery-item">
-					<img src="/assets/img/gallery_placeholder.jpg" />
+					<img src="assets/img/gallery_placeholder.jpg" />
 					<p>
 						Name Surname<br>
 						<span>8$/hour</span>
@@ -226,7 +247,7 @@
 			<div class="row">
 
 				<div class="medium-3 columns gallery-item">
-					<img src="/assets/img/gallery_placeholder.jpg" />
+					<img src="assets/img/gallery_placeholder.jpg" />
 					<p>
 						Name Surname<br>
 						<span>8$/hour</span>
@@ -234,7 +255,7 @@
 				</div>
 
 				<div class="medium-3 columns gallery-item">
-					<img src="/assets/img/gallery_placeholder.jpg" />
+					<img src="assets/img/gallery_placeholder.jpg" />
 					<p>
 						Name Surname<br>
 						<span>8$/hour</span>
@@ -242,7 +263,7 @@
 				</div>
 
 				<div class="medium-3 columns gallery-item">
-					<img src="/assets/img/gallery_placeholder.jpg" />
+					<img src="assets/img/gallery_placeholder.jpg" />
 					<p>
 						Name Surname<br>
 						<span>8$/hour</span>
@@ -250,7 +271,7 @@
 				</div>
 
 				<div class="medium-3 columns gallery-item">
-					<img src="/assets/img/gallery_placeholder.jpg" />
+					<img src="assets/img/gallery_placeholder.jpg" />
 					<p>
 						Name Surname<br>
 						<span>8$/hour</span>
@@ -264,7 +285,7 @@
 		<section class="project-by">
 
 			<div class="row"><div class="columns text-center">
-				<img class="logo" src="/assets/img/logo_header.svg" />
+				<img class="logo" src="assets/img/logo_header.svg" />
 				<p><b>This is a project by On Our Radar, made possible thanks to funding from the EJC blabla</b></p>
 			</div></div>
 
@@ -305,7 +326,7 @@
 					<h3>Special Thanks</h3>
 					<p>all the team at AWAJ foundation and Olivia Windham Stewart and Renasha Khan</p>
 
-					<img src="/assets/img/oor_logo.png" />
+					<img src="assets/img/oor_logo.png" />
 				</div>
 
 				<div class="medium-1 columns"></div>
@@ -321,27 +342,78 @@
 		<div class="appearing-header" aria-hidden="true">
 			<div class="story-header row">
 				<div class="medium-4 columns">
-					<img class="float-left" src="/assets/img/media_header.svg" alt="Media Logo" />
+					<img class="float-left" src="assets/img/media_header.svg" alt="Media Logo" />
 				</div>
 				<div class="medium-4 columns text-center">
-					<img src="/assets/img/logo_header.svg" alt="Sewing Society Logo" />
+					<img src="assets/img/logo_header.svg" alt="Sewing Society Logo" />
 				</div>
 				<div class="medium-4 columns menu-icons">
-					<a href="#"><img src="/assets/img/about.svg" /><span class="show-for-sr">About</span></a>
-					<a href="#"><img src="/assets/img/share_tw.svg" /><span class="show-for-sr">Twitter</span></a>
-					<a href="#"><img src="/assets/img/share_fb.svg" /><span class="show-for-sr">Facebook</span></a>
-					<a href="#"><img src="/assets/img/sh_bag.svg" /><span class="show-for-sr">??</span></a>
+					<a href="#"><img src="assets/img/about.svg" /><span class="show-for-sr">About</span></a>
+					<a href="#"><img src="assets/img/share_tw.svg" /><span class="show-for-sr">Twitter</span></a>
+					<a href="#"><img src="assets/img/share_fb.svg" /><span class="show-for-sr">Facebook</span></a>
+					<a href="#"><img src="assets/img/sh_bag.svg" /><span class="show-for-sr">??</span></a>
 				</div>
 			</div>
 		</div>
 
-		<div class="reveal" id="video-modal" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+		<!--<div class="reveal" id="video-modal" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
 			<button class="close-button" data-close aria-label="Close modal" type="button">
-				<img aria-hidden="true" src="/assets/img/close.svg" />
+				
 			</button>
 			<div data-type="vimeo" data-video-id="186436301"></div>
-		</div>
+		</div>-->
 
-		<script src="/assets/js/app.js"></script>
+		<script src="assets/js/app.js"></script>
+            <script>
+               
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+                
+                  var videobtn = document.getElementById('this-btn-open');
+    var videocontent = document.getElementsByClassName("modal-video")[0];
+   
+              
+
+
+// When the user clicks the button, open the modal 
+window.onload = function() {
+    modal.style.display = "block";
+}
+
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+    videocontent.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+    
+            
+    videobtn.onclick = function() {
+    videocontent.style.display = "block";
+   
+}       
+ 
+   
+     
+
+</script>
+        
 	</body>
 </html>
