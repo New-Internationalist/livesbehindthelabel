@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <html xmlns:og="http://opengraphprotocol.org/schema/">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />        
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable = yes" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>Unequal exchanges</title>
+        <link rel="stylesheet" type="text/css" href="dist/css/index.css" />
+        <script src="https://use.typekit.net/jlc4hvm.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    </head>
+
+    <body>
+        <div class="transactions">
+            <div class="exchanges__key">
+                <a class="exchanges__key-item exchanges__key-item--receiving">Receiving countries</a>
+                <a class="exchanges__key-item exchanges__key-item--sending active">Sending countries</a>
+            </div>
+            <div class="transactions__instruction">Click on a country to see the connections</div>
+            <div class="transactions__active">
+                <div class="transactions__active__wrapper">
+                    <span class="transactions__active__name"></span>
+                    <span class="transactions__active__close"></span>
+                    <span class="transactions__active__total"></span>
+                </div>
+                <div class="transactions__legend">
+                    <span class="transactions__legend--receiving">Receiving countries</span>
+                    <span class="transactions__legend--sending">Sending countries</span>
+                </div>
+            </div>
+            <div class="transactions__container">
+                <svg class="transactions__svg"></svg>
+                <!-- <div class="transactions__canvas-container"></div> -->
+                <div class="transactions__countries"></div>
+            </div>
+        </div>
+        <script src="dist/javascript/index.js"></script>
+    </body>
+</html>
