@@ -4289,7 +4289,7 @@ only screen and (min-resolution: 192dpi) and (min-width: 1024px) {
 
 @media screen and (min-width: 40em) {
     .card--main {
-        padding: 70px 50px 90px 50%;
+        padding: 70px 50px 0px 50%;
         background-image: url(../img/image_banner.png);
         background-position: 110px center;
         background-repeat: no-repeat;
@@ -4412,9 +4412,11 @@ footer p {
 }
 
 .story-header {
+    
     padding-top: 30px;
     padding-bottom: 30px;
-    height: 108px
+    height: 108px;
+    z-index: 10000;
 }
 
 .story-footer {
@@ -4422,7 +4424,7 @@ footer p {
     bottom: 0;
     height: 125px;
     width: 100%;
-    background: #f1f1f1
+    background: #d4d4d4
 }
 
 .story-footer .row,
@@ -4501,7 +4503,8 @@ footer p {
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
     -webkit-transition: opacity 140ms linear;
-    transition: opacity 140ms linear
+    transition: opacity 140ms linear;
+   
 }
 
 .tabs-title .tab-play {
@@ -4511,11 +4514,19 @@ footer p {
 
 .tabs-title .tab-name {
     color: white !important;
-    font-size: 35px;
-    line-height: 42px;
+    font-size: 25px;
+    line-height: 25px;
     font-family: 'essonnes-display', serif;
     text-align: center;
-    padding-top: 17px
+    padding-top: 20px
+}
+.tabs-title .tab-name p {
+    color: white !important;
+    font-size: 15px;
+    line-height: 5px;!important;
+    font-family: akrobat, sans-serif;
+    text-align: center;
+    
 }
 
 .tabs-title a:focus .tab-name,
@@ -4541,7 +4552,7 @@ footer p {
     top: 108px;
     bottom: 125px;
     width: 100%;
-    background: #f8f8f8;
+    background: #f1f1f1;
     border: none
 }
 
@@ -4588,7 +4599,7 @@ footer p {
 
 .tabs-panel img {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
@@ -4596,13 +4607,13 @@ footer p {
 }
 
 .play-story {
-    height: 100px;
-    padding-left: 125px;
+    height: 50px;
+    padding-left: 75px;
     margin-bottom: 10px;
     background: url(../img/play_story.svg) left center no-repeat;
-    background-size: 100px;
+    background-size: 50px;
     font-family: akrobat, sans-serif;
-    font-size: 27px;
+    font-size: 24px;
     font-weight: 300;
     cursor: pointer;
     -webkit-transition: opacity 0.14s linear;
@@ -4658,7 +4669,7 @@ footer p {
 /* Modal Content */
 .modal-content {
     position: relative;
-    background-color: #fefefe;
+    background-color: #f0f0f0;
     margin: auto;
     padding: 0;
     border: 1px solid #888;
@@ -4687,7 +4698,7 @@ footer p {
 .close {
     color: white;
     margin-left: 90%;
-    font-size: 35px;
+    font-size: 38px;
     font-weight: bold;
 }
 
@@ -4742,7 +4753,13 @@ footer p {
 @media screen and (min-width: 40em) {}
 
 /* Medium only */
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    
+   div.tabs-panel img {
+   top: auto;
+    bottom: 0!important;
+}
+}
 
 /* Large and up */
 @media screen and (min-width: 64em) {}
@@ -4765,3 +4782,11 @@ footer p {
 
 
 
+
+#fullpage {
+    z-index: 0;
+}
+
+.mobile-content {
+    margin-top: -300px;
+}
