@@ -4281,6 +4281,7 @@ only screen and (min-resolution: 192dpi) and (min-width: 1024px) {
     background-color: #F1F1F1;
     text-align: center;
     display: block;
+    
 }
 
 .card--main {
@@ -4289,11 +4290,13 @@ only screen and (min-resolution: 192dpi) and (min-width: 1024px) {
 
 @media screen and (min-width: 40em) {
     .card--main {
+        height: 563px;
         padding: 70px 50px 0px 50%;
         background-image: url(../img/image_banner.png);
-        background-position: 110px center;
+        background-position: 110px bottom;
         background-repeat: no-repeat;
-        background-size: 340px
+        background-size: 340px;
+       bottom: 0
     }
 }
 
@@ -4412,7 +4415,18 @@ footer p {
 }
 
 .story-header {
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 108px;
     
+}
+.story-header-index {
+    
+    width: 100%;
+    background-color: #fff;
     padding-top: 30px;
     padding-bottom: 30px;
     height: 108px;
@@ -4673,7 +4687,8 @@ footer p {
     margin: auto;
     padding: 0;
     border: 1px solid #888;
-    width: 90%;
+     width: 100%;
+    height: 563px;
     max-height: 563px;
     max-width: 1000px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
@@ -4747,6 +4762,57 @@ footer p {
     margin-bottom: 15px
 }
     
+   div.story-header {
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 60px;
+    z-index: 10000;
+}  
+    div.story-header-index{
+       
+   
+        height: 100px;
+        
+    }
+    
+    
+    
+    div.card--main {
+        text-align: left;
+        height: 400px;
+        padding: 50px 50px 0px 35%;
+        background-image: url(../img/image_banner_mobile.png);
+        background-position: 0 bottom;
+        background-repeat: no-repeat;
+        background-size: 140px;
+        bottom: 0
+    }
+    div.card--main h1 {
+        font-size: 25px;
+    }
+    div.card--main .claim {
+    font-size: 17px;
+    width: 100%;
+    margin: 0 auto
+}
+    
+    .modal {
+   
+    padding-top: 10px; /* Location of the box */
+    
+}
+    
+    .modal-content {
+    height: 400px;
+}
+
+    .story-header-index {
+    height: 90px;
+}
+    
 }
 
 /* Medium and up */
@@ -4787,6 +4853,153 @@ footer p {
     z-index: 0;
 }
 
-.mobile-content {
-    margin-top: -300px;
+
+
+.description-mobile {
+    font-family: 'essonessens';
+    font-size: 15px;
+    line-height: 21px;
+}
+
+.cost-mobile {
+     font-size: 18px;
+    color: #ababab;
+    margin-bottom: 2px
+}
+
+
+  .embed-container {
+            margin-top: 60px;
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+        
+        .embed-container iframe,
+        .embed-container object,
+        .embed-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+#bg-video{
+    max-height: 563px;
+}
+
+#this-btn-open {
+    color: black;
+    font-size: 20px
+}
+
+.mobile-story-container {
+    margin-top: 60px;
+}
+
+.nav-mobile-menu {
+    position: absolute;
+    margin: 30px 0px 0px 85%;
+    font-size: 20px;
+    color: black;
+    top: 0;
+    float: right;
+}
+
+
+
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+     -webkit-animation-name: animateopacity;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animateopacity;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animateopacity {
+    from { opacity:0} 
+    to { opacity:1}
+}
+
+@keyframes animateopacity {
+    from { opacity:0}
+    to { opacity:1}
+}
+
+
+.overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay-content p {
+   color: white
+}
+
+.overlay-content img {
+    padding-right: 30px;
+    height: 20px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 26px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
+.header-logo img {
+    width: 18px;
+    
+}
+
+.nav-mobile-menu-story {
+
+    position: absolute;
+    margin: 10px 0px 0px 85%;
+    font-size: 20px;
+    color: black;
+    top: 0;
+    float: right;
+
 }

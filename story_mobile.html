@@ -15,8 +15,15 @@
                 async: false
             });
         } catch (e) {}
-
     </script>
+   
+<!--
+    <script type="text/javascript">
+        if (screen.width >= 699) {
+            document.location = "story.html";
+        }
+    </script>
+-->
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -53,7 +60,6 @@
             if (b.indexOf('mobi') > 0 || b.indexOf('blackberry') > 0 || b.indexOf('palm') > 0) h.className += ' mobile';
             else h.className += ' desktop';
         })(document.documentElement, navigator.userAgent.toLowerCase())
-
     </script>
 
     <!--[if lte IE 9]>
@@ -68,103 +74,127 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery.fullPage.js"></script>
 
+
     <script>
         $(document).ready(function() {
             $('#fullpage').fullpage({
 
                 continuousVertical: true,
+                verticalCentered: false,
+                anchors:['firstPage', 'secondPage', 'thirdPage'],
+
             });
 
         });
-
     </script>
-    <style>
-        .embed-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-            max-width: 100%;
-        }
-        
-        .embed-container iframe,
-        .embed-container object,
-        .embed-container embed {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
 
-    </style>
 
 </head>
 
 <body class="page-stories">
 
-    <div class="story-header row">
-        <div class="medium-4 columns">
-            <img class="float-left" src="assets/img/media_header.svg" alt="Media Logo" />
+    <div class="story-header">
+        <div class="row">
+            <div class="small-4 columns">
+                <img class="float-left" src="assets/img/media_header.svg" alt="Media Logo" />
+            </div>
+            <div class="small-4 columns text-center header-logo">
+                <img src="assets/img/logo_header.svg" alt="Sewing Society Logo" />
+            </div>
+            
+            <div class="medium-2 columns show-for-small-only">
+               
+            <a class="nav-mobile-menu-story" id="nav-toggle" onclick="openNav()">&#9776;</a>
+                   
         </div>
-        <div class="medium-4 columns text-center hide-for-small-only">
-            <img src="assets/img/logo_header.svg" alt="Sewing Society Logo" />
-        </div>
-        <div class="medium-4 columns menu-icons hide-for-small-only">
-            <a href=""><img src="assets/img/about.svg" /><span class="show-for-sr">About</span></a>
-            <a href="#"><img src="assets/img/share_tw.svg" /><span class="show-for-sr">Twitter</span></a>
-            <a href="#"><img src="assets/img/share_fb.svg" /><span class="show-for-sr">Facebook</span></a>
-            <a href="#"><img src="assets/img/sh_bag.svg" /><span class="show-for-sr">??</span></a>
         </div>
     </div>
 
     <div id="fullpage">
 
-        <div class="section">
+        <div class="section" id="01">
+            <div class='embed-container'><iframe src='http://player.vimeo.com/video/66140585' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
             <div class="row">
                 <div class="medium-12 columns mobile-content">
-                    <div class='embed-container'><iframe src='http://player.vimeo.com/video/66140585' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
-                    <h1>Cazzi amari</h1>
-                    <p>askdnaskldaklj da da doasjd oiasj doi asjdoijasd jasjd as dajs j dasj sadj dsj oisaj ioads jioajs iodijs oji ojio dsijo dsaji ods ijdsaij osdij odsaij osdij ods ijosdij oadsj ioji oadsijo dsaij oadsij oadij odsaijo adsji oads ji</p>
+
+                    <br>
+                    <h3>Shampa Surname</h3>
+                    <p class="cost-mobile">80$/week</p>
+                    <p class="description-mobile">
+                        Sharif is a woman born in the body of a man. Most people like her - the so-called ‘third gender’ - earn their living by begging on the streets. Far from the system of purdah where women are kept apart from men, the factories have encouraged the integration of the sexes.
+                    </p>
                 </div>
             </div>
         </div>
 
-
-
+        
         <div class="section">
+            <div class='embed-container'><iframe src='http://player.vimeo.com/video/66140585' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
             <div class="row">
                 <div class="medium-12 columns mobile-content">
-                    <div class='embed-container'><iframe src='http://player.vimeo.com/video/66140585' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
-                    <h1>Cazzi amari</h1>
-                    <p>askdnaskldaklj da da doasjd oiasj doi asjdoijasd jasjd as dajs j dasj sadj dsj oisaj ioads jioajs iodijs oji ojio dsijo dsaji ods ijdsaij osdij odsaij osdij ods ijosdij oadsj ioji oadsijo dsaij oadsij oadij odsaijo adsji oads ji</p>
+
+                    <br>
+                    <h3>Shampa Surname 02</h3>
+                    <p class="cost-mobile">80$/week</p>
+                    <p class="description-mobile">
+                        Sharif is a woman born in the body of a man. Most people like her - the so-called ‘third gender’ - earn their living by begging on the streets. Far from the system of purdah where women are kept apart from men, the factories have encouraged the integration of the sexes.
+                    </p>
+                </div>
+            </div>
+        </div>
+            
+        <div class="section">
+            <div class='embed-container'><iframe src='http://player.vimeo.com/video/66140585' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+            <div class="row">
+                <div class="medium-12 columns mobile-content">
+
+
+                    <br>
+                    <h3>Shampa Surname</h3>
+                    <p class="cost-mobile">80$/week</p>
+                    <p class="description-mobile">
+                        Sharif is a woman born in the body of a man. Most people like her - the so-called ‘third gender’ - earn their living by begging on the streets. Far from the system of purdah where women are kept apart from men, the factories have encouraged the integration of the sexes.
+                    </p>
                 </div>
             </div>
         </div>
         <div class="section">
+            <div class='embed-container'><iframe src='http://player.vimeo.com/video/66140585' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
             <div class="row">
+
                 <div class="medium-12 columns mobile-content">
-                    
-                    <div class='embed-container'><iframe src='http://player.vimeo.com/video/66140585' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
-                    <h1>Cazzi amari</h1>
-                    <p>askdnaskldaklj da da doasjd oiasj doi asjdoijasd jasjd as dajs j dasj sadj dsj oisaj ioads jioajs iodijs oji ojio dsijo dsaji ods ijdsaij osdij odsaij osdij ods ijosdij oadsj ioji oadsijo dsaij oadsij oadij odsaijo adsji oads ji</p>
-                </div>
-            </div>
-        </div>
-        <div class="section">
-            <div class="row">
-                <div class="medium-12 columns mobile-content">
-                    
-                    <div class='embed-container'><iframe src='http://player.vimeo.com/video/66140585' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
-                    <h1>Cazzi amari</h1>
-                    <p>askdnaskldaklj da da doasjd oiasj doi asjdoijasd jasjd as dajs j dasj sadj dsj oisaj ioads jioajs iodijs oji ojio dsijo dsaji ods ijdsaij osdij odsaij osdij ods ijosdij oadsj ioji oadsijo dsaij oadsij oadij odsaijo adsji oads ji</p>
+
+
+                    <br>
+                    <h3>Shampa Surname</h3>
+                    <p class="cost-mobile">80$/week</p>
+                    <p class="description-mobile">
+                        Sharif is a woman born in the body of a man. Most people like her - the so-called ‘third gender’ - earn their living by begging on the streets. Far from the system of purdah where women are kept apart from men, the factories have encouraged the integration of the sexes.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
+     <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#"> <img src="assets/img/sh_bag_m.svg" /> Shopping Bag</a>
+    <p>Share:</p>
+    <a href="#"> <img src="assets/img/share_tw_m.svg" /> Twitter</a>
+    <a href="#"> <img src="assets/img/share_fb_m.svg" />Facebook</a>
+  </div>
+</div>
 
 
+<script>
+      function openNav() {
+    document.getElementById("myNav").style.display = "block";
+}
 
+function closeNav() {
+    document.getElementById("myNav").style.display = "none";
+}
+    </script>
 
 </body>
 
