@@ -4167,8 +4167,8 @@ ol {
 }
 
 .claim {
-    font-size: 23px;
-    width: 60%;
+    font-size: 18px;
+    width: 70%;
     margin: 0 auto
 }
 
@@ -4260,12 +4260,13 @@ only screen and (min-resolution: 192dpi) and (min-width: 1024px) {
 }
 
 .home-header {
-    margin-top: 30px;
-    margin-bottom: 135px
+    /*margin-top: 30px;
+    margin-bottom: 135px*/
 }
 
 .menu-icons {
-    text-align: right
+    text-align: right;
+    padding-top: 10px;
 }
 
 .menu-icons a {
@@ -4291,7 +4292,7 @@ only screen and (min-resolution: 192dpi) and (min-width: 1024px) {
 @media screen and (min-width: 40em) {
     .card--main {
         height: 563px;
-        padding: 70px 50px 0px 50%;
+        padding: 70px 0px 0px 30%;
         background-image: url(../img/image_banner.png);
         background-position: 110px bottom;
         background-repeat: no-repeat;
@@ -4400,8 +4401,8 @@ footer p {
 .appearing-header {
     position: fixed;
     width: 100%;
-    background: rgba(255, 255, 255, 0.95);
-    top: -108px;
+    background: #191919;
+    top: 0px;
     -webkit-transition: -webkit-transform 200ms ease-out;
     transition: -webkit-transform 200ms ease-out;
     transition: transform 200ms ease-out;
@@ -4409,9 +4410,7 @@ footer p {
 }
 
 .appearing-header.is-visible {
-    -webkit-transform: translateY(100%);
-    -ms-transform: translateY(100%);
-    transform: translateY(100%)
+    
 }
 
 .story-header {
@@ -4423,13 +4422,15 @@ footer p {
     height: 108px;
     
 }
+
+
 .story-header-index {
     
     width: 100%;
-    background-color: #fff;
+     background: #191919;
     padding-top: 30px;
     padding-bottom: 30px;
-    height: 108px;
+    height: 90px;
     z-index: 10000;
 }
 
@@ -4469,7 +4470,7 @@ footer p {
     display: block;
     position: relative;
     padding: 0;
-    background: url(../img/sharif_tab.jpg) center center no-repeat;
+    background: url(../img/laizu_tab.jpg) center center no-repeat;
     background-size: cover
 }
 
@@ -4477,21 +4478,21 @@ footer p {
 .tabs-title:nth-child(2) a:focus,
 .tabs-title:nth-child(2) a:hover,
 .tabs-title:nth-child(2) a[aria-selected='true'] {
-    background-image: url(../img/ema_tab.jpg)
+    background-image: url(../img/sharif_tab.jpg)
 }
 
 .tabs-title:nth-child(3) a,
 .tabs-title:nth-child(3) a:focus,
 .tabs-title:nth-child(3) a:hover,
 .tabs-title:nth-child(3) a[aria-selected='true'] {
-    background-image: url(../img/shampa_tab.jpg)
+    background-image: url(../img/ema_tab.jpg)
 }
 
 .tabs-title:nth-child(4) a,
 .tabs-title:nth-child(4) a:focus,
 .tabs-title:nth-child(4) a:hover,
 .tabs-title:nth-child(4) a[aria-selected='true'] {
-    background-image: url(../img/laizu_tab.jpg)
+    background-image: url(../img/shampa_tab.jpg)
 }
 
 .tabs-title:nth-child(5) a,
@@ -4563,7 +4564,7 @@ footer p {
 
 .story-stories {
     position: absolute;
-    top: 108px;
+    top: 90px;
     bottom: 125px;
     width: 100%;
     background: #f1f1f1;
@@ -4640,7 +4641,7 @@ footer p {
 
 .page-stories .reveal-overlay {
     background: black;
-    top: 108px;
+    top: 90px;
     bottom: 125px;
     overflow-y: hidden
 }
@@ -4688,9 +4689,9 @@ footer p {
     padding: 0;
     border: 1px solid #888;
      width: 100%;
-    height: 563px;
-    max-height: 563px;
-    max-width: 1000px;
+    height: 564px;
+    max-height: 564px;
+    max-width: 1002px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
@@ -4765,7 +4766,7 @@ footer p {
    div.story-header {
     position: absolute;
     width: 100%;
-    background-color: #fff;
+    background-color: #000;
     padding-top: 10px;
     padding-bottom: 10px;
     height: 60px;
@@ -4813,6 +4814,17 @@ footer p {
     height: 90px;
 }
     
+    .media-logo{
+        padding-bottom: 30px;
+    }
+    
+    div.intro-header-banner {
+     background-color:white;
+    color:black ;
+    text-align: center;
+    padding: 50px 0 50px 0;
+    margin-bottom: 20px
+}
 }
 
 /* Medium and up */
@@ -4892,8 +4904,15 @@ footer p {
 }
 
 #this-btn-open {
-    color: black;
-    font-size: 20px
+    color: white;
+    font-size: 20px;
+    border: 2px white solid;
+    padding: 15px;
+        
+}
+#this-btn-open img {
+    margin-right: 5px;
+        
 }
 
 .mobile-story-container {
@@ -4904,7 +4923,7 @@ footer p {
     position: absolute;
     margin: 30px 0px 0px 85%;
     font-size: 20px;
-    color: black;
+    color: #fff;
     top: 0;
     float: right;
 }
@@ -4989,17 +5008,71 @@ footer p {
 
 
 .header-logo img {
-    width: 18px;
+    padding-top: 5px;
+    width: 60px;
     
 }
 
 .nav-mobile-menu-story {
-
+    
     position: absolute;
     margin: 10px 0px 0px 85%;
     font-size: 20px;
-    color: black;
+    color: #fff;
     top: 0;
     float: right;
+    
 
+}
+
+
+
+.media-logo {
+    padding-top: 10px;
+}
+
+
+
+.intro-header-banner {
+     background-color:white;
+    color:black ;
+    text-align: center;
+    padding: 90px;
+    margin-bottom: 20px
+}
+.intro-header-banner h3 {
+     font-size: 20px;
+    letter-spacing: 5px;
+    
+    
+}
+.intro-header-banner p  {
+    font-size: 17px;
+     padding: 30px 50px 0px 50px;
+    
+}
+
+.page-stories {
+    background-color: #f0f0f0;
+}
+
+.header-story-container {
+    width: 100%;
+          background-color: #191919;
+}
+
+.second-container {
+    padding-top: 250px;
+}
+
+#closevideo {
+    cursor: pointer;
+}
+
+.about p{
+    text-align: left;
+}
+
+.header-logo img{
+    width: 60px;
 }
