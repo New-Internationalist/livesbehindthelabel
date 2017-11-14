@@ -1,22 +1,11 @@
 <!doctype html>
 <html class="no-js" lang="">
-
-<head>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <script src="https://use.typekit.net/gcz0kcw.js"></script>
-    <script>
-        try {
-            Typekit.load({
-                async: false
-            });
-        } catch (e) {}
-
-    </script>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -25,6 +14,7 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
     <meta name="theme-color" content="#ffffff">
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bevan|Lato:300,300i,400,400i,700">
     <link rel="stylesheet" href="assets/css/app.css">
 
     <meta property="og:type" content="website">
@@ -36,284 +26,197 @@
 
     <!-- JS active/detect mobile -->
     <script>
-        (function(h, b) {
-            h.className = h.className.replace(/\bno-js\b/, 'js');
-            window.onerror = function() {
-                h.className = h.className.replace(/\bjs\b/, 'no-js');
-            }
-            if (b.indexOf('mobi') > 0 || b.indexOf('blackberry') > 0 || b.indexOf('palm') > 0) h.className += ' mobile';
-            else h.className += ' desktop';
-        })(document.documentElement, navigator.userAgent.toLowerCase())
-
+      (function(h, b) {
+        h.className = h.className.replace(/\bno-js\b/, 'js');
+        window.onerror = function() {
+          h.className = h.className.replace(/\bjs\b/, 'no-js');
+        }
+        if (b.indexOf('mobi') > 0 || b.indexOf('blackberry') > 0 || b.indexOf('palm') > 0) h.className += ' mobile';
+        else h.className += ' desktop';
+      })(document.documentElement, navigator.userAgent.toLowerCase())
     </script>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
     <!--[if lte IE 9]>
-			<script>
-				/**
-				* @preserve HTML5 Shiv 3.7.3 | @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed
-				*/
-				!function(a,b){function c(a,b){var c=a.createElement("p"),d=a.getElementsByTagName("head")[0]||a.documentElement;return c.innerHTML="x<style>"+b+"</style>",d.insertBefore(c.lastChild,d.firstChild)}function d(){var a=t.elements;return"string"==typeof a?a.split(" "):a}function e(a,b){var c=t.elements;"string"!=typeof c&&(c=c.join(" ")),"string"!=typeof a&&(a=a.join(" ")),t.elements=c+" "+a,j(b)}function f(a){var b=s[a[q]];return b||(b={},r++,a[q]=r,s[r]=b),b}function g(a,c,d){if(c||(c=b),l)return c.createElement(a);d||(d=f(c));var e;return e=d.cache[a]?d.cache[a].cloneNode():p.test(a)?(d.cache[a]=d.createElem(a)).cloneNode():d.createElem(a),!e.canHaveChildren||o.test(a)||e.tagUrn?e:d.frag.appendChild(e)}function h(a,c){if(a||(a=b),l)return a.createDocumentFragment();c=c||f(a);for(var e=c.frag.cloneNode(),g=0,h=d(),i=h.length;i>g;g++)e.createElement(h[g]);return e}function i(a,b){b.cache||(b.cache={},b.createElem=a.createElement,b.createFrag=a.createDocumentFragment,b.frag=b.createFrag()),a.createElement=function(c){return t.shivMethods?g(c,a,b):b.createElem(c)},a.createDocumentFragment=Function("h,f","return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&("+d().join().replace(/[\w\-:]+/g,function(a){return b.createElem(a),b.frag.createElement(a),'c("'+a+'")'})+");return n}")(t,b.frag)}function j(a){a||(a=b);var d=f(a);return!t.shivCSS||k||d.hasCSS||(d.hasCSS=!!c(a,"article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}template{display:none}")),l||i(a,d),a}var k,l,m="3.7.3",n=a.html5||{},o=/^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$/i,p=/^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)$/i,q="_html5shiv",r=0,s={};!function(){try{var a=b.createElement("a");a.innerHTML="<xyz></xyz>",k="hidden"in a,l=1==a.childNodes.length||function(){b.createElement("a");var a=b.createDocumentFragment();return"undefined"==typeof a.cloneNode||"undefined"==typeof a.createDocumentFragment||"undefined"==typeof a.createElement}()}catch(c){k=!0,l=!0}}();var t={elements:n.elements||"abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output picture progress section summary template time video",version:m,shivCSS:n.shivCSS!==!1,supportsUnknownElements:l,shivMethods:n.shivMethods!==!1,type:"default",shivDocument:j,createElement:g,createDocumentFragment:h,addElements:e};a.html5=t,j(b),"object"==typeof module&&module.exports&&(module.exports=t)}("undefined"!=typeof window?window:this,document);
-			</script>
-		<![endif]-->
+      <script>
+      /**
+      * @preserve HTML5 Shiv 3.7.3 | @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed
+      */
+      !function(a,b){function c(a,b){var c=a.createElement("p"),d=a.getElementsByTagName("head")[0]||a.documentElement;return c.innerHTML="x<style>"+b+"</style>",d.insertBefore(c.lastChild,d.firstChild)}function d(){var a=t.elements;return"string"==typeof a?a.split(" "):a}function e(a,b){var c=t.elements;"string"!=typeof c&&(c=c.join(" ")),"string"!=typeof a&&(a=a.join(" ")),t.elements=c+" "+a,j(b)}function f(a){var b=s[a[q]];return b||(b={},r++,a[q]=r,s[r]=b),b}function g(a,c,d){if(c||(c=b),l)return c.createElement(a);d||(d=f(c));var e;return e=d.cache[a]?d.cache[a].cloneNode():p.test(a)?(d.cache[a]=d.createElem(a)).cloneNode():d.createElem(a),!e.canHaveChildren||o.test(a)||e.tagUrn?e:d.frag.appendChild(e)}function h(a,c){if(a||(a=b),l)return a.createDocumentFragment();c=c||f(a);for(var e=c.frag.cloneNode(),g=0,h=d(),i=h.length;i>g;g++)e.createElement(h[g]);return e}function i(a,b){b.cache||(b.cache={},b.createElem=a.createElement,b.createFrag=a.createDocumentFragment,b.frag=b.createFrag()),a.createElement=function(c){return t.shivMethods?g(c,a,b):b.createElem(c)},a.createDocumentFragment=Function("h,f","return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&("+d().join().replace(/[\w\-:]+/g,function(a){return b.createElem(a),b.frag.createElement(a),'c("'+a+'")'})+");return n}")(t,b.frag)}function j(a){a||(a=b);var d=f(a);return!t.shivCSS||k||d.hasCSS||(d.hasCSS=!!c(a,"article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}template{display:none}")),l||i(a,d),a}var k,l,m="3.7.3",n=a.html5||{},o=/^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$/i,p=/^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)$/i,q="_html5shiv",r=0,s={};!function(){try{var a=b.createElement("a");a.innerHTML="<xyz></xyz>",k="hidden"in a,l=1==a.childNodes.length||function(){b.createElement("a");var a=b.createDocumentFragment();return"undefined"==typeof a.cloneNode||"undefined"==typeof a.createDocumentFragment||"undefined"==typeof a.createElement}()}catch(c){k=!0,l=!0}}();var t={elements:n.elements||"abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output picture progress section summary template time video",version:m,shivCSS:n.shivCSS!==!1,supportsUnknownElements:l,shivMethods:n.shivMethods!==!1,type:"default",shivDocument:j,createElement:g,createDocumentFragment:h,addElements:e};a.html5=t,j(b),"object"==typeof module&&module.exports&&(module.exports=t)}("undefined"!=typeof window?window:this,document);
+      </script>
+    <![endif]-->
+  </head>
 
-</head>
-
-<body class="page-home">
-
-
-    <!-- The Modal -->
+  <body class="page-home">
     <div id="myModal" class="modal">
-        <span class="close">&times;</span>
+      <span class="close">&times;</span>
 
-        <!-- Modal content -->
-        <div class="modal-content">
-             <!-- <div class="show-for-small-only">
-               <img src="assets/img/image_banner_mobile.png"> 
-
-            </div>-->
-            <div class="row">
-
-                <div class="modal-video">
-                    <video id="bg-video" controls>
-                        <source src="assets/img/vid/intro.mp4" type="video/mp4">
-                        <source src="assets/img/vid/intro.webm" type="video/webm">
-                        Your browser does not support HTML5 video.
-                    </video>
-                   
-                </div>
-                
+      <div class="modal-content">
+          <div class="row">
+            <div class="modal-video">
+              <video id="bg-video" controls>
+                <source src="assets/img/vid/intro.mp4" type="video/mp4" />
+                <source src="assets/img/vid/intro.webm" type="video/webm" />
+                Your browser does not support HTML5 video.
+              </video>
             </div>
+          </div>
+      </div> <!--//modal content-->
+    </div> <!--//modal-->
 
-        </div>
+    <div class=""></div>
 
-
-    </div>
-
-    <!--<div class="banner">
-			<div class="banner__background js-parallax"></div>
-			<img src="assets/img/media_banner.svg" alt="Media Logo" />
-			<img src="assets/img/logo_banner.svg" alt="Sewing Society Logo" />
-			<p>Stories from the Garement Factories of Bangladesh</p>
-			
-		</div>-->
-<div class=""></div>
-    
- <div class="row">
-     
-     <div class="medium-12 columns">
-         <div class="intro-header-banner">
-             <div class="medium-4 columns home-header ">
-           
-        </div>
-        <div class="medium-12 columns text-center">
-            <br><br><br><br>
-            <img src="assets/img/logo_home_w.svg" width="120px" alt="Sewing Society Logo" />
-        </div>
-        
-             <div class="second-container">
+    <div class="row">
+      <div class="medium-12 columns">
+        <div class="intro-header-banner">
+          <div class="medium-4 columns home-header "> </div>
+          <div class="medium-12 columns text-center">
+            <br /><br /><br /><br /> <!--??-->
+            <img src="assets/img/logo_home_w.svg" width="120px" alt="We make your clothes logo" />
+          </div>
+          <div class="second-container">
             <h3>THE LIVES BEHIND THE LABEL</h3>
-                 <div class="about">
-             <p>‘Made in Bangladesh’ has become an instantly recognisable symbol for the eighth most populous country in the world. But what springs to mind when you see ‘Made in Bangladesh’ in the collar of your H&M shirt? 
-<br><br>
-The media in the West tends to present us with a fairly one-dimensional picture of garment factories: Dickensian working conditions, women crouched over sewing machines working long hours for low wages, unscrupulous employers whose negligence leads to disasters such as the 2013 Rana Plaza collapse that killed 1129 people and left thousands more injured.
-<br><br>
-But the stats tell another story: Bangladesh has been enjoying an average of 5-6% annual GDP growth since the 1980s, driven in no small part by the boom in the ready-made garment industry. Bangladesh is now the second biggest garment manufacturer in the world, home to almost five million factory workers who make the clothes we see in the H+M, Zara, Mango, Levis or Primark stores on high streets up and down the country.
-<br><br>
-After several decades of consistent growth, the industry now accounts for over three quarters of the country’s export earnings and 14.5% of national GDP. Factory work has lifted millions of rural Bangladeshis out of the cycle of extreme poverty linked to subsistence farming, allowing workers to save money and to send their children to school.
-<br><br>
-But this phenomenon is still relatively new: as recently as 1980, the garment industry in Bangladesh was virtually non-existent. Just as in Europe at the dawn of industrialisation, the rise of factory work has brought about radical changes in society, transforming relations between men and women, creating new social classes and changing people’s habits and lifestyles.
-<br><br>
-We wanted to hear about some of these changes, in the words of factory workers who are living through this period of rapid transformation.  
-<br><br>
-To achieve this, we partnered with one of the country’s largest trade unions to run storytelling workshops with 80 garment workers in five different neighbourhoods. During these workshops, we trained workers to interview each other and tell their stories to the rest of the group, discussing these insights collectively to understand how these individual stories relate to the typical worker experience. The result was a series of films that take us beyond the stereotypes to reveal surprising and intimate stories about factory workers’ concerns, hopes and dreams.  </p>
-                 </div>
-                 <br><br>
-                 <a href="home.html"> <h4>Back to homepage</h4></a>
-                 </div>
-         </div>
-      
-     </div>
-     
-    
-    </div>
-
-    
+            <div class="about">
+              <p>‘Made in Bangladesh’ has become an instantly recognisable symbol for the eighth most populous country in the world. But what springs to mind when you see ‘Made in Bangladesh’ in the collar of your H&amp;M shirt?</p>
+              <p>The media in the West tends to present us with a fairly one-dimensional picture of garment factories: Dickensian working conditions, women crouched over sewing machines working long hours for low wages, unscrupulous employers whose negligence leads to disasters such as the 2013 Rana Plaza collapse that killed 1129 people and left thousands more injured.</p>
+              <p>But the stats tell another story: Bangladesh has been enjoying an average of 5-6% annual GDP growth since the 1980s, driven in no small part by the boom in the ready-made garment industry. Bangladesh is now the second biggest garment manufacturer in the world, home to almost five million factory workers who make the clothes we see in the H+M, Zara, Mango, Levis or Primark stores on high streets up and down the country.</p>
+              <p>After several decades of consistent growth, the industry now accounts for over three quarters of the country’s export earnings and 14.5% of national GDP. Factory work has lifted millions of rural Bangladeshis out of the cycle of extreme poverty linked to subsistence farming, allowing workers to save money and to send their children to school.</p>
+              <p>But this phenomenon is still relatively new: as recently as 1980, the garment industry in Bangladesh was virtually non-existent. Just as in Europe at the dawn of industrialisation, the rise of factory work has brought about radical changes in society, transforming relations between men and women, creating new social classes and changing people’s habits and lifestyles.</p>
+              <p>We wanted to hear about some of these changes, in the words of factory workers who are living through this period of rapid transformation.</p>
+              <p>To achieve this, we partnered with one of the country’s largest trade unions to run storytelling workshops with 80 garment workers in five different neighbourhoods. During these workshops, we trained workers to interview each other and tell their stories to the rest of the group, discussing these insights collectively to understand how these individual stories relate to the typical worker experience. The result was a series of films that take us beyond the stereotypes to reveal surprising and intimate stories about factory workers’ concerns, hopes and dreams.</p>
+              <p style="text-align:center"><a href="home.html"><span style="font-size:1.3em">&laquo; Back to homepage</span></a></p>
+            </div>
+          </div><!--//2nd container-->
+        </div> <!--//intro-header-banner-->
+      </div> <!--//medium 12-col-->
+    </div> <!--//row-->
 
     <section class="project-by">
+      <div class="row">
+        <div class="columns text-center">
+          <img class="logo" src="assets/img/logo.svg" width="70px" />
+          <p><strong>This is a project by On Our Radar, made possible thanks to funding from the European Journalism Centre (EJC), Innovation in Development Reporting (IDR)</strong></p>
+        </div>
+      </div>
 
-        <div class="row">
-            <div class="columns text-center">
-                <img class="logo" src="assets/img/logo.svg" width="70px" />
-                <p><b>This is a project by On Our Radar, made possible thanks to funding from the European Journalism Centre (EJC), Innovation in Development Reporting (IDR)</b></p>
-            </div>
+      <div class="row">
+        <div class="medium-3 columns">
+          <h3>Produced, filmed, directed</h3>
+          <p> Davide Morandini, Paul Myles </p>
+          <h3>Editing</h3>
+          <p>Davide Morandini</p>
+          <h3>Photography</h3>
+          <p>Davide Morandini, Paul Myles</p>
+          <h3>Photography post-production</h3>
+          <p>Nicola Avanzinelli</p>
         </div>
 
-        <div class="row">
+        <div class="medium-3 medium-offset-1 columns">
+          <h3>Interactive Concept</h3>
+          <p>May Abdalla, Isacco Chiaf, Davide Morandini, Paul Myles </p>
+          <h3>Web design and development</h3>
+          <p>Isacco Chiaf, Manuele Sarfatti</p>
+          <h3>Fixers and translators</h3>
+          <p>Nahidul Hassan Nayan, Imran Rahman, Farah Tanzir</p>
+          <h3>Music</h3>
+          <p>19 Sound</p>
+        </div>
 
-            <div class="medium-3 columns">
+        <div class="medium-3 medium-offset-1 columns">
+          <h3>Special Thanks</h3>
+          <p> all the team at AWAJ foundation, Olivia Windham Stewart, Florence Myles and Renasha Khan</p>
+          <img src="assets/img/oor_logo.png" />
+        </div>
 
-                <h3>Produced, filmed, directed</h3>
-                <p> Davide Morandini, Paul Myles </p>
-
-                <h3>Editing</h3>
-                <p>Davide Morandini</p>
-
-                <h3>Photography</h3>
-                <p>Davide Morandini, Paul Myles</p>
-
-                <h3>Photography post-production</h3>
-                <p>Nicola Avanzinelli</p>
-            </div>
-
-            <div class="medium-3 medium-offset-1 columns">
-
-                <h3>Interactive Concept</h3>
-                <p>May Abdalla, Isacco Chiaf, Davide Morandini, Paul Myles </p>
-
-                <h3>Web design and development</h3>
-                <p>Isacco Chiaf, Manuele Sarfatti</p>
-
-                <h3>Fixers and translators</h3>
-                <p>Nahidul Hassan Nayan, Imran Rahman, Farah Tanzir</p>
-
-                <h3>Music</h3>
-                <p>19 Sound</p>
-            </div>
-
-            <div class="medium-3 medium-offset-1 columns">
-
-                <h3>Special Thanks</h3>
-                <p> all the team at AWAJ foundation, Olivia Windham Stewart, Florence Myles and Renasha Khan</p>
-
-                <img src="assets/img/oor_logo.png" />
-            </div>
-
-            <div class="medium-1 columns"></div>
-
+        <div class="medium-1 columns"></div>
     </section>
 
     <footer>
-        <div class="row">
-            <div class="columns text-center">
-                <p>Footer copyright 2017</p>
-            </div>
+      <div class="row">
+        <div class="columns text-center">
+          <p>Footer copyright 2017</p>
         </div>
+      </div>
     </footer>
 
     <div class="appearing-header" aria-hidden="true">
-        <div class="story-header-index row">
-            <div class="small-4 columns">
-                <img class="float-left media-logo" src="assets/img/logo_internazionale.png" width="200px" alt="Media Logo" />
-            </div>
-            <div class="small-4 columns text-center header-logo">
-               <a href="home.html"> <img class="hide-for-small-only" src="assets/img/logo_w.svg" alt="Sewing Society Logo" /></a>
-            </div>
-            <div class="small-4 columns menu-icons hide-for-small-only">
-                <a href="#" id="myBtn2"><img src="assets/img/play.svg" width="15px" /><span class="show-for-sr">Intro</span></a>
-                <a href="#"><img src="assets/img/share_tw_w.svg" width="20px" /><span class="show-for-sr">Twitter</span></a>
-                <a href="#"><img src="assets/img/share_fb_w.svg" width="10px" /><span class="show-for-sr">Facebook</span></a>
-               <a href=""><img src="assets/img/sh_bag_w.svg" width="20px" /><span class="show-for-sr">Info</span></a>
-            </div>
-            <div class="medium-2 columns show-for-small-only">
-               
-            <a class="nav-mobile-menu" id="nav-toggle" onclick="openNav()">&#9776;</a>
-                   
+      <div class="story-header-index row">
+        <div class="small-4 columns">
+          <img class="float-left media-logo" src="assets/img/logo_internazionale.png" width="200px" alt="Media Logo" />
         </div>
+        <div class="small-4 columns text-center header-logo">
+          <a href="home.html"> <img class="hide-for-small-only" src="assets/img/logo_w.svg" alt="Sewing Society Logo" /></a>
         </div>
+        <div class="small-4 columns menu-icons hide-for-small-only">
+          <a href="#" id="myBtn2"><img src="assets/img/play.svg" width="15px" /><span class="show-for-sr">Intro</span></a>
+          <a href="#"><img src="assets/img/share_tw_w.svg" width="20px" /><span class="show-for-sr">Twitter</span></a>
+          <a href="#"><img src="assets/img/share_fb_w.svg" width="10px" /><span class="show-for-sr">Facebook</span></a>
+          <a href=""><img src="assets/img/sh_bag_w.svg" width="20px" /><span class="show-for-sr">Info</span></a>
+        </div>
+        <div class="medium-2 columns show-for-small-only">
+
+          <a class="nav-mobile-menu" id="nav-toggle" onclick="openNav()">&#9776;</a>
+
+        </div>
+      </div>
     </div>
-        
-       <div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-     <a href=""> <img src="assets/img/sh_bag_m.svg" /> About</a>
-    <p>Share:</p>
-    <a href="#"> <img src="assets/img/share_tw_m.svg" /> Twitter</a>
-    <a href="#"> <img src="assets/img/share_fb_m.svg" />Facebook</a>
-      
-    
-  </div>
-</div>
 
-
-    <!--<div class="reveal" id="video-modal" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
-			<button class="close-button" data-close aria-label="Close modal" type="button">
-				
-			</button>
-			<div data-type="vimeo" data-video-id="186436301"></div>
-		</div>-->
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href=""> <img src="assets/img/sh_bag_m.svg" /> About</a>
+        <p>Share:</p>
+        <a href="#"> <img src="assets/img/share_tw_m.svg" /> Twitter</a>
+        <a href="#"> <img src="assets/img/share_fb_m.svg" /> Facebook</a>
+      </div>
+    </div>
 
     <script src="assets/js/app.js"></script>
     <script>
-        // Get the modal
-        var modal = document.getElementById('myModal');
+      var modal = document.getElementById('myModal');
+      var btn2 = document.getElementById("myBtn2");
+      var span = document.getElementsByClassName("close")[0];
+      var videobtn = document.getElementById('this-btn-open');
+      var videocontent = document.getElementsByClassName("modal-video")[0];
+      var videointro = document.getElementById("bg-video");
 
-        // Get the button that opens the modal
-        //var btn = document.getElementById("myBtn");
-        var btn2 = document.getElementById("myBtn2");
+      btn2.onclick = function(e) {
+        modal.style.display = "block";
+        videocontent.style.display = "block";
+        videointro.play();
+        e.preventDefault();
+      }
 
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+        videocontent.style.display = "none";
+        videointro.pause(); 
+        videointro.load();
+      }
 
-        var videobtn = document.getElementById('this-btn-open');
-        var videocontent = document.getElementsByClassName("modal-video")[0];
-         var videointro = document.getElementById("bg-video");
-        
-
-
-
-
-        // When the user clicks the button, open the modal 
-        
-
-       /* btn.onclick = function() {
-            modal.style.display = "block";
-            videocontent.style.display = "block";
-            videointro.play();
-        }*/
-        
-        btn2.onclick = function(e) {
-            modal.style.display = "block";
-            videocontent.style.display = "block";
-            videointro.play();
-            e.preventDefault();
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+          videocontent.style.display = "none";
+          videointro.pause(); 
+          videointro.load();
         }
+      }
 
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-            modal.style.display = "none";
-            videocontent.style.display = "none";
-            videointro.pause(); 
-            videointro.load();
-        }
+      videobtn.onclick = function() {
+        videocontent.style.display = "block";
+        videointro.play(); 
 
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-                videocontent.style.display = "none";
-                videointro.pause(); 
-                videointro.load();
-            }
-        }
+      }
 
+      function openNav() {
+        document.getElementById("myNav").style.display = "block";
+      }
 
-
-        videobtn.onclick = function() {
-            videocontent.style.display = "block";
-            videointro.play(); 
-
-        }
-
-        function openNav() {
-    document.getElementById("myNav").style.display = "block";
-}
-
-function closeNav() {
-    document.getElementById("myNav").style.display = "none";
-}
-    </script>
-
-</body>
-
+      function closeNav() {
+        document.getElementById("myNav").style.display = "none";
+      }
+      </script>
+  </body>
 </html>
