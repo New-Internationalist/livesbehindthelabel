@@ -1,22 +1,14 @@
 <!doctype html>
 <html class="no-js" lang="">
+  <head>
 
-<head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="https://use.typekit.net/gcz0kcw.js"></script>
-    <script>
-        try {
-            Typekit.load({
-                async: false
-            });
-        } catch (e) {}
-
-    </script>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -25,6 +17,7 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
     <meta name="theme-color" content="#ffffff">
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bevan|Lato:300,300i,400,400i,700">
     <link rel="stylesheet" href="assets/css/app.css">
 
     <meta property="og:type" content="website">
@@ -33,244 +26,235 @@
     <meta property="og:image" name="twitter:image:src" content="">
     <meta property="og:description" name="twitter:description" content="">
     <meta name="twitter:card" content="">
-    
-  <script type="text/javascript">
 
-if (screen.width <= 699) {
-document.location = "story_mobile.html";
-}
-
-</script>
+    <script type="text/javascript">
+      if (screen.width <= 699) {
+        document.location = "story_mobile.html";
+      }
+    </script>
 
     <!-- JS active/detect mobile -->
     <script>
-        (function(h, b) {
-            h.className = h.className.replace(/\bno-js\b/, 'js');
-            window.onerror = function() {
-                h.className = h.className.replace(/\bjs\b/, 'no-js');
-            }
-            if (b.indexOf('mobi') > 0 || b.indexOf('blackberry') > 0 || b.indexOf('palm') > 0) h.className += ' mobile';
-            else h.className += ' desktop';
-        })(document.documentElement, navigator.userAgent.toLowerCase())
-
+      (function(h, b) {
+        h.className = h.className.replace(/\bno-js\b/, 'js');
+        window.onerror = function() {
+          h.className = h.className.replace(/\bjs\b/, 'no-js');
+        }
+        if (b.indexOf('mobi') > 0 || b.indexOf('blackberry') > 0 || b.indexOf('palm') > 0) h.className += ' mobile';
+        else h.className += ' desktop';
+      })(document.documentElement, navigator.userAgent.toLowerCase())
     </script>
 
     <!--[if lte IE 9]>
-			<script>
-				/**
-				* @preserve HTML5 Shiv 3.7.3 | @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed
-				*/
-				!function(a,b){function c(a,b){var c=a.createElement("p"),d=a.getElementsByTagName("head")[0]||a.documentElement;return c.innerHTML="x<style>"+b+"</style>",d.insertBefore(c.lastChild,d.firstChild)}function d(){var a=t.elements;return"string"==typeof a?a.split(" "):a}function e(a,b){var c=t.elements;"string"!=typeof c&&(c=c.join(" ")),"string"!=typeof a&&(a=a.join(" ")),t.elements=c+" "+a,j(b)}function f(a){var b=s[a[q]];return b||(b={},r++,a[q]=r,s[r]=b),b}function g(a,c,d){if(c||(c=b),l)return c.createElement(a);d||(d=f(c));var e;return e=d.cache[a]?d.cache[a].cloneNode():p.test(a)?(d.cache[a]=d.createElem(a)).cloneNode():d.createElem(a),!e.canHaveChildren||o.test(a)||e.tagUrn?e:d.frag.appendChild(e)}function h(a,c){if(a||(a=b),l)return a.createDocumentFragment();c=c||f(a);for(var e=c.frag.cloneNode(),g=0,h=d(),i=h.length;i>g;g++)e.createElement(h[g]);return e}function i(a,b){b.cache||(b.cache={},b.createElem=a.createElement,b.createFrag=a.createDocumentFragment,b.frag=b.createFrag()),a.createElement=function(c){return t.shivMethods?g(c,a,b):b.createElem(c)},a.createDocumentFragment=Function("h,f","return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&("+d().join().replace(/[\w\-:]+/g,function(a){return b.createElem(a),b.frag.createElement(a),'c("'+a+'")'})+");return n}")(t,b.frag)}function j(a){a||(a=b);var d=f(a);return!t.shivCSS||k||d.hasCSS||(d.hasCSS=!!c(a,"article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}template{display:none}")),l||i(a,d),a}var k,l,m="3.7.3",n=a.html5||{},o=/^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$/i,p=/^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)$/i,q="_html5shiv",r=0,s={};!function(){try{var a=b.createElement("a");a.innerHTML="<xyz></xyz>",k="hidden"in a,l=1==a.childNodes.length||function(){b.createElement("a");var a=b.createDocumentFragment();return"undefined"==typeof a.cloneNode||"undefined"==typeof a.createDocumentFragment||"undefined"==typeof a.createElement}()}catch(c){k=!0,l=!0}}();var t={elements:n.elements||"abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output picture progress section summary template time video",version:m,shivCSS:n.shivCSS!==!1,supportsUnknownElements:l,shivMethods:n.shivMethods!==!1,type:"default",shivDocument:j,createElement:g,createDocumentFragment:h,addElements:e};a.html5=t,j(b),"object"==typeof module&&module.exports&&(module.exports=t)}("undefined"!=typeof window?window:this,document);
-			</script>
-		<![endif]-->
-   
+      <script>
+      /**
+      * @preserve HTML5 Shiv 3.7.3 | @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed
+      */
+      !function(a,b){function c(a,b){var c=a.createElement("p"),d=a.getElementsByTagName("head")[0]||a.documentElement;return c.innerHTML="x<style>"+b+"</style>",d.insertBefore(c.lastChild,d.firstChild)}function d(){var a=t.elements;return"string"==typeof a?a.split(" "):a}function e(a,b){var c=t.elements;"string"!=typeof c&&(c=c.join(" ")),"string"!=typeof a&&(a=a.join(" ")),t.elements=c+" "+a,j(b)}function f(a){var b=s[a[q]];return b||(b={},r++,a[q]=r,s[r]=b),b}function g(a,c,d){if(c||(c=b),l)return c.createElement(a);d||(d=f(c));var e;return e=d.cache[a]?d.cache[a].cloneNode():p.test(a)?(d.cache[a]=d.createElem(a)).cloneNode():d.createElem(a),!e.canHaveChildren||o.test(a)||e.tagUrn?e:d.frag.appendChild(e)}function h(a,c){if(a||(a=b),l)return a.createDocumentFragment();c=c||f(a);for(var e=c.frag.cloneNode(),g=0,h=d(),i=h.length;i>g;g++)e.createElement(h[g]);return e}function i(a,b){b.cache||(b.cache={},b.createElem=a.createElement,b.createFrag=a.createDocumentFragment,b.frag=b.createFrag()),a.createElement=function(c){return t.shivMethods?g(c,a,b):b.createElem(c)},a.createDocumentFragment=Function("h,f","return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&("+d().join().replace(/[\w\-:]+/g,function(a){return b.createElem(a),b.frag.createElement(a),'c("'+a+'")'})+");return n}")(t,b.frag)}function j(a){a||(a=b);var d=f(a);return!t.shivCSS||k||d.hasCSS||(d.hasCSS=!!c(a,"article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}template{display:none}")),l||i(a,d),a}var k,l,m="3.7.3",n=a.html5||{},o=/^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$/i,p=/^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)$/i,q="_html5shiv",r=0,s={};!function(){try{var a=b.createElement("a");a.innerHTML="<xyz></xyz>",k="hidden"in a,l=1==a.childNodes.length||function(){b.createElement("a");var a=b.createDocumentFragment();return"undefined"==typeof a.cloneNode||"undefined"==typeof a.createDocumentFragment||"undefined"==typeof a.createElement}()}catch(c){k=!0,l=!0}}();var t={elements:n.elements||"abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output picture progress section summary template time video",version:m,shivCSS:n.shivCSS!==!1,supportsUnknownElements:l,shivMethods:n.shivMethods!==!1,type:"default",shivDocument:j,createElement:g,createDocumentFragment:h,addElements:e};a.html5=t,j(b),"object"==typeof module&&module.exports&&(module.exports=t)}("undefined"!=typeof window?window:this,document);
+      </script>
+    <![endif]-->
+  </head>
 
-</head>
-
-<body class="page-stories">
-
+  <body class="page-stories">
     <div class="header-story-container">
-    <div class="story-header-index row">
+      <div class="story-header-index row">
         <div class="medium-4 columns">
-             <img class="float-left media-logo" src="assets/img/logo_internazionale.png" width="150px" alt="Media Logo" />
+          <img class="float-left media-logo" src="assets/img/logo_internazionale.png" width="150px" alt="Media Logo" />
         </div>
         <div class="medium-4 columns text-center header-logo">
-            <a href="home.html"> <img src="assets/img/logo_w.svg" alt="Sewing Society Logo" /></a>
+          <a href="home.html"> <img src="assets/img/logo_w.svg" alt="Sewing Society Logo" /></a>
         </div>
         <div class="medium-4 columns menu-icons">
-            <a href="#"><img src="assets/img/share_tw_w.svg" width="20px" /><span class="show-for-sr">Twitter</span></a>
-                <a href="#"><img src="assets/img/share_fb_w.svg" width="10px" /><span class="show-for-sr">Facebook</span></a>
-            <a href="about.html"><img src="assets/img/sh_bag_w.svg" width="20px" /><span class="show-for-sr">Info</span></a>
-                
+          <a href="#"><img src="assets/img/share_tw_w.svg" width="20px" /><span class="show-for-sr">Twitter</span></a>
+          <a href="#"><img src="assets/img/share_fb_w.svg" width="10px" /><span class="show-for-sr">Facebook</span></a>
+          <a href="about.html"><img src="assets/img/sh_bag_w.svg" width="20px" /><span class="show-for-sr">Info</span></a>
         </div>
+      </div>
     </div>
+
+    <section class="story-stories tabs-content" data-tabs-content="the-tabs">
+      <div class="row tabs-panel" id="panel1" role="tabpanel">
+        <div class="medium-6 columns">
+          <img src="assets/img/laizu_story.jpg" />
         </div>
-    
-        <section class="story-stories tabs-content" data-tabs-content="the-tabs">
-            
-            <div class="row tabs-panel" id="panel1" role="tabpanel">
-                <div class="medium-6 columns">
-                    <img src="assets/img/laizu_story.jpg" /></div>
-                <div class="medium-6 columns">
-                    <h2>Laizu, 24</h2>
-                    <p class="cost">$79 / month</p>
-                    <p class="description">
-                        Laizu is a 24 year old sewing machine operator from a poor agricultural background. At her age, had she remained in her village, she would likely have had an arranged marriage in exchange for dowry money. However, as for many other female factory workers, garment work has brought Laizu a newfound independence.
-                    </p>
-                    <button type="button" class="play-story" data-open="video-modal1">Play Story</button>
-                </div>
-            </div>
-            
-            <div class="row tabs-panel is-active" id="panel2" role="tabpanel">
-                <div class="medium-6 columns">
-                    <img src="assets/img/sharif_story.jpg" />
-                </div>
-                <div class="medium-6 columns">
-                    <h2>Sharif, 25</h2>
-                    <p class="cost">$78 / month</p>
-                    <p class="description">
-                        Sharif is a woman born in the body of a man. In Bangladesh, most hijras - the name given to the ‘third gender’ community - earn their living by begging on the streets. Far from the system of purdah where men and women should be kept apart, the mixing of the sexes in the factories have helped give Sharif a role in society. 
-                    </p>
-                    <button type="button" class="play-story" data-open="video-modal2">Play Story</button>
-                </div>
-            </div>
-
-            <div class="row tabs-panel" id="panel3" role="tabpanel">
-                <div class="medium-6 columns">
-                    <img src="assets/img/ema_story.jpg" /></div>
-                <div class="medium-6 columns">
-                    <h2>Ema, 18</h2>
-                    <p class="cost">$78 / month</p>
-                    <p class="description">
-                        Making Western clothes every day in the factory has opened Ema’s eyes to trends in the Western world. A fashionista and an avid follower of the latest trends on social media, she loves the clothes that she makes. However, these clothes are only for foreign people or college girls - not for poor, working class girls like her.
-                    </p>
-                    <button type="button" class="play-story" data-open="video-modal3">Play Story</button>
-                </div>
-            </div>
-
-            <div class="row tabs-panel" id="panel4" role="tabpanel">
-                <div class="medium-6 columns">
-                    <img src="assets/img/shampa_story.jpg" /></div>
-                <div class="medium-6 columns">
-                    <h2>Shampa, 30</h2>
-                    <p class="cost">$105 / month</p>
-                    <p class="description">
-                        Shampa dreams of being a dancer. Since she was a child, she has been dreaming of being up on stage. However, garment workers aren’t supposed to have these kind of big dreams - working at least 10 hours a day for 6 days a week, she fears she’ll never have time to fulfil her ambitions. 
-                    </p>
-                    <button type="button" class="play-story" data-open="video-modal4">Play Story</button>
-                </div>
-            </div>
-
-            
-
-            <div class="row tabs-panel" id="panel5" role="tabpanel">
-                <div class="medium-6 columns">
-                    <img src="assets/img/nurabu_story.jpg" /></div>
-                <div class="medium-6 columns">
-                    <h2>Nurbanu, 25</h2>
-                    <p class="cost">$86 / month</p>
-                    <p class="description">
-                        Nurbanu was working at Rana Plaza the day the building collapsed, killing 1135 people and injuring thousands more in one of the worst disasters of industrial history. She survived the disaster but injuries and nightmares still haunt her. However, she doesn’t have many other choices but to go back to the factory - for an uneducated girl from a poor rural background with three children to support, garment work is the only option she has.
-
-                    </p>
-                    <button type="button" class="play-story" data-open="video-modal5">Play Story</button>
-                </div>
-            </div>
-
-            <div class="row tabs-panel" id="panel6" role="tabpanel">
-                <div class="medium-6 columns">
-                    <img src="assets/img/nazma_story.jpg" /></div>
-                <div class="medium-6 columns description-overlay">
-                    <h2>Nazma, 42</h2>
-                    <p class="cost"></p>
-                    <p class="description">
-                        Nazma started working in the factories when she was 11. At 12, she was fired for protesting against the management and by 14 she had founded her first trade union. Today, she leads more than 100,000 garment workers. Her fight against fashion multinationals and against Bangladesh’s traditionally-minded society has improved the working and living conditions of the garment workers. However, many struggles still lay ahead.
-                    </p>
-                    <button type="button" class="play-story" data-open="video-modal6">Play Story</button>
-                </div>
-            </div>
-
-        </section>
-
-        <section class="story-footer">
-            <div class="row">
-                <div class="columns">
-                    <ul class="tabs" data-deep-link="true" data-tabs id="the-tabs" role="tablist">
-                         <li class="tabs-title" role="tab">
-                            <a href="#panel1">
-                                <div class="tab-play"></div>
-                                <div class="tab-name">
-                                    <p>Chapter 01</p>I depend on me</div>
-                            </a>
-                        </li>
-                        <li class="tabs-title is-active" role="tab">
-                            <a href="#panel2" aria-selected="true">
-                                <div class="tab-play"></div>
-
-                                <div class="tab-name">
-                                    <p>Chapter 02</p>Hijra: out of the closet</div>
-                            </a>
-                        </li>
-                        <li class="tabs-title" role="tab">
-                            <a href="#panel3">
-                                <div class="tab-play"></div>
-                                <div class="tab-name">
-                                    <p>Chapter 03</p>You are what<br> you wear</div>
-                            </a>
-                        </li>
-                        <li class="tabs-title" role="tab">
-                            <a href="#panel4">
-                                <div class="tab-play"></div>
-                                <div class="tab-name">
-                                    <p>Chapter 04</p>Discounted <br>dreams</div>
-                            </a>
-                        </li>
-                       
-                        <li class="tabs-title" role="tab">
-                            <a href="#panel5">
-                                <div class="tab-play"></div>
-                                <div class="tab-name">
-                                    <p>Chapter 05</p>A tough bargain</div>
-                            </a>
-                        </li>
-                        <li class="tabs-title" role="tab">
-                            <a href="#panel6">
-                                <div class="tab-play"></div>
-                                <div class="tab-name">
-                                    <p>Chapter 06</p>The fight must go on</div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <div class="reveal" id="video-modal1" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
-            <button class="close-button" data-close aria-label="Close modal" type="button">
-				<img aria-hidden="true" src="assets/img/close.svg" />
-			</button>
-            <div data-type="vimeo" data-video-id="223705237"></div>
+        <div class="medium-6 columns">
+          <h2>Laizu, 24</h2>
+          <p class="cost">$79 / month</p>
+          <p class="description">
+          Laizu is a 24 year old sewing machine operator from a poor agricultural background. At her age, had she remained in her village, she would likely have had an arranged marriage in exchange for dowry money. However, as for many other female factory workers, garment work has brought Laizu a newfound independence.
+          </p>
+          <button type="button" class="play-story" data-open="video-modal1">Play Story</button>
         </div>
+      </div>
 
-        <div class="reveal" id="video-modal2" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
-            <button class="close-button" data-close aria-label="Close modal" type="button">
-				<img aria-hidden="true" src="assets/img/close.svg" />
-			</button>
-            <div data-type="vimeo" data-video-id="223744565"></div>
+      <div class="row tabs-panel is-active" id="panel2" role="tabpanel">
+        <div class="medium-6 columns">
+          <img src="assets/img/sharif_story.jpg" />
         </div>
+        <div class="medium-6 columns">
+          <h2>Sharif, 25</h2>
+          <p class="cost">$78 / month</p>
+          <p class="description">
+          Sharif is a woman born in the body of a man. In Bangladesh, most hijras - the name given to the ‘third gender’ community - earn their living by begging on the streets. Far from the system of purdah where men and women should be kept apart, the mixing of the sexes in the factories have helped give Sharif a role in society. 
+          </p>
+          <button type="button" class="play-story" data-open="video-modal2">Play Story</button>
+        </div>
+      </div>
 
-        <div class="reveal" id="video-modal3" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
-            <button class="close-button" data-close aria-label="Close modal" type="button">
-				<img aria-hidden="true" src="assets/img/close.svg" />
-			</button>
-            <div data-type="vimeo" data-video-id="223693814"></div>
+      <div class="row tabs-panel" id="panel3" role="tabpanel">
+        <div class="medium-6 columns">
+          <img src="assets/img/ema_story.jpg" />
         </div>
+        <div class="medium-6 columns">
+          <h2>Ema, 18</h2>
+          <p class="cost">$78 / month</p>
+          <p class="description">
+          Making Western clothes every day in the factory has opened Ema’s eyes to trends in the Western world. A fashionista and an avid follower of the latest trends on social media, she loves the clothes that she makes. However, these clothes are only for foreign people or college girls - not for poor, working class girls like her.
+          </p>
+          <button type="button" class="play-story" data-open="video-modal3">Play Story</button>
+        </div>
+      </div>
 
-        <div class="reveal" id="video-modal4" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
-            <button class="close-button" data-close aria-label="Close modal" type="button">
-				<img aria-hidden="true" src="assets/img/close.svg" />
-			</button>
-            <div data-type="vimeo" data-video-id="223730280"></div>
+      <div class="row tabs-panel" id="panel4" role="tabpanel">
+        <div class="medium-6 columns">
+          <img src="assets/img/shampa_story.jpg" />
         </div>
+        <div class="medium-6 columns">
+          <h2>Shampa, 30</h2>
+          <p class="cost">$105 / month</p>
+          <p class="description">
+          Shampa dreams of being a dancer. Since she was a child, she has been dreaming of being up on stage. However, garment workers aren’t supposed to have these kind of big dreams - working at least 10 hours a day for 6 days a week, she fears she’ll never have time to fulfil her ambitions. 
+          </p>
+          <button type="button" class="play-story" data-open="video-modal4">Play Story</button>
+        </div>
+      </div>
 
-        <div class="reveal" id="video-modal5" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
-            <button class="close-button" data-close aria-label="Close modal" type="button">
-				<img aria-hidden="true" src="assets/img/close.svg" />
-			</button>
-            <div data-type="vimeo" data-video-id="223722238"></div>
+      <div class="row tabs-panel" id="panel5" role="tabpanel">
+        <div class="medium-6 columns">
+          <img src="assets/img/nurabu_story.jpg" />
         </div>
+        <div class="medium-6 columns">
+          <h2>Nurbanu, 25</h2>
+          <p class="cost">$86 / month</p>
+          <p class="description">
+          Nurbanu was working at Rana Plaza the day the building collapsed, killing 1135 people and injuring thousands more in one of the worst disasters of industrial history. She survived the disaster but injuries and nightmares still haunt her. However, she doesn’t have many other choices but to go back to the factory - for an uneducated girl from a poor rural background with three children to support, garment work is the only option she has.
 
-        <div class="reveal" id="video-modal6" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
-            <button class="close-button" data-close aria-label="Close modal" type="button">
-				<img aria-hidden="true" src="assets/img/close.svg" />
-			</button>
-            <div data-type="vimeo" data-video-id="223715621"></div>
+          </p>
+          <button type="button" class="play-story" data-open="video-modal5">Play Story</button>
         </div>
-    
+      </div>
+
+      <div class="row tabs-panel" id="panel6" role="tabpanel">
+        <div class="medium-6 columns">
+          <img src="assets/img/nazma_story.jpg" />
+        </div>
+        <div class="medium-6 columns description-overlay">
+          <h2>Nazma, 42</h2>
+          <p class="cost">$80 / month</p>
+          <p class="description">
+          Nazma started working in the factories when she was 11. At 12, she was fired for protesting against the management and by 14 she had founded her first trade union. Today, she leads more than 100,000 garment workers. Her fight against fashion multinationals and against Bangladesh’s traditionally-minded society has improved the working and living conditions of the garment workers. However, many struggles still lay ahead.
+          </p>
+          <button type="button" class="play-story" data-open="video-modal6">Play Story</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-footer">
+      <div class="row">
+        <div class="columns">
+          <ul class="tabs" data-deep-link="true" data-tabs id="the-tabs" role="tablist">
+            <li class="tabs-title" role="tab">
+              <a href="#panel1">
+                <div class="tab-play"></div>
+                <div class="tab-name">
+                  <p>Chapter 01</p>I depend on me</div>
+              </a>
+            </li>
+            <li class="tabs-title is-active" role="tab">
+              <a href="#panel2" aria-selected="true">
+                <div class="tab-play"></div>
+
+                <div class="tab-name">
+                  <p>Chapter 02</p>Hijra: out of the closet</div>
+              </a>
+            </li>
+            <li class="tabs-title" role="tab">
+              <a href="#panel3">
+                <div class="tab-play"></div>
+                <div class="tab-name">
+                  <p>Chapter 03</p>You are what<br> you wear</div>
+              </a>
+            </li>
+            <li class="tabs-title" role="tab">
+              <a href="#panel4">
+                <div class="tab-play"></div>
+                <div class="tab-name">
+                  <p>Chapter 04</p>Discounted <br>dreams</div>
+              </a>
+            </li>
+
+            <li class="tabs-title" role="tab">
+              <a href="#panel5">
+                <div class="tab-play"></div>
+                <div class="tab-name">
+                  <p>Chapter 05</p>A tough bargain</div>
+              </a>
+            </li>
+            <li class="tabs-title" role="tab">
+              <a href="#panel6">
+                <div class="tab-play"></div>
+                <div class="tab-name">
+                  <p>Chapter 06</p>The fight must go on</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="reveal" id="video-modal1" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+        <img aria-hidden="true" src="assets/img/close.svg" />
+      </button>
+      <div data-type="vimeo" data-video-id="223705237"></div>
+    </div>
+
+    <div class="reveal" id="video-modal2" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+        <img aria-hidden="true" src="assets/img/close.svg" />
+      </button>
+      <div data-type="vimeo" data-video-id="223744565"></div>
+    </div>
+
+    <div class="reveal" id="video-modal3" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+        <img aria-hidden="true" src="assets/img/close.svg" />
+      </button>
+      <div data-type="vimeo" data-video-id="223693814"></div>
+    </div>
+
+    <div class="reveal" id="video-modal4" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+        <img aria-hidden="true" src="assets/img/close.svg" />
+      </button>
+      <div data-type="vimeo" data-video-id="223730280"></div>
+    </div>
+
+    <div class="reveal" id="video-modal5" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+        <img aria-hidden="true" src="assets/img/close.svg" />
+      </button>
+      <div data-type="vimeo" data-video-id="223722238"></div>
+    </div>
+
+    <div class="reveal" id="video-modal6" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+        <img aria-hidden="true" src="assets/img/close.svg" />
+      </button>
+      <div data-type="vimeo" data-video-id="223715621"></div>
+    </div>
 
     <script src="assets/js/app.js"></script>
-    
-    
-</body>
+  </body>
 
 </html>
