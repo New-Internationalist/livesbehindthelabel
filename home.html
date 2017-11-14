@@ -1,22 +1,11 @@
 <!doctype html>
 <html class="no-js" lang="">
-
-<head>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <script src="https://use.typekit.net/gcz0kcw.js"></script>
-    <script>
-        try {
-            Typekit.load({
-                async: false
-            });
-        } catch (e) {}
-
-    </script>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -25,6 +14,7 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
     <meta name="theme-color" content="#ffffff">
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bevan|Lato:300,300i,400,400i,700">
     <link rel="stylesheet" href="assets/css/app.css">
 
     <meta property="og:type" content="website">
@@ -34,644 +24,515 @@
     <meta property="og:description" name="twitter:description" content="">
     <meta name="twitter:card" content="">
 
-    <!-- JS active/detect mobile -->
     <script>
-        (function(h, b) {
-            h.className = h.className.replace(/\bno-js\b/, 'js');
-            window.onerror = function() {
-                h.className = h.className.replace(/\bjs\b/, 'no-js');
-            }
-            if (b.indexOf('mobi') > 0 || b.indexOf('blackberry') > 0 || b.indexOf('palm') > 0) h.className += ' mobile';
-            else h.className += ' desktop';
-        })(document.documentElement, navigator.userAgent.toLowerCase())
-
+      (function(h, b) {
+        h.className = h.className.replace(/\bno-js\b/, 'js');
+        window.onerror = function() {
+          h.className = h.className.replace(/\bjs\b/, 'no-js');
+        }
+        if (b.indexOf('mobi') > 0 || b.indexOf('blackberry') > 0 || b.indexOf('palm') > 0) h.className += ' mobile';
+        else h.className += ' desktop';
+      })(document.documentElement, navigator.userAgent.toLowerCase())
     </script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-
     <!--[if lte IE 9]>
-			<script>
-				/**
-				* @preserve HTML5 Shiv 3.7.3 | @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed
-				*/
-				!function(a,b){function c(a,b){var c=a.createElement("p"),d=a.getElementsByTagName("head")[0]||a.documentElement;return c.innerHTML="x<style>"+b+"</style>",d.insertBefore(c.lastChild,d.firstChild)}function d(){var a=t.elements;return"string"==typeof a?a.split(" "):a}function e(a,b){var c=t.elements;"string"!=typeof c&&(c=c.join(" ")),"string"!=typeof a&&(a=a.join(" ")),t.elements=c+" "+a,j(b)}function f(a){var b=s[a[q]];return b||(b={},r++,a[q]=r,s[r]=b),b}function g(a,c,d){if(c||(c=b),l)return c.createElement(a);d||(d=f(c));var e;return e=d.cache[a]?d.cache[a].cloneNode():p.test(a)?(d.cache[a]=d.createElem(a)).cloneNode():d.createElem(a),!e.canHaveChildren||o.test(a)||e.tagUrn?e:d.frag.appendChild(e)}function h(a,c){if(a||(a=b),l)return a.createDocumentFragment();c=c||f(a);for(var e=c.frag.cloneNode(),g=0,h=d(),i=h.length;i>g;g++)e.createElement(h[g]);return e}function i(a,b){b.cache||(b.cache={},b.createElem=a.createElement,b.createFrag=a.createDocumentFragment,b.frag=b.createFrag()),a.createElement=function(c){return t.shivMethods?g(c,a,b):b.createElem(c)},a.createDocumentFragment=Function("h,f","return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&("+d().join().replace(/[\w\-:]+/g,function(a){return b.createElem(a),b.frag.createElement(a),'c("'+a+'")'})+");return n}")(t,b.frag)}function j(a){a||(a=b);var d=f(a);return!t.shivCSS||k||d.hasCSS||(d.hasCSS=!!c(a,"article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}template{display:none}")),l||i(a,d),a}var k,l,m="3.7.3",n=a.html5||{},o=/^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$/i,p=/^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)$/i,q="_html5shiv",r=0,s={};!function(){try{var a=b.createElement("a");a.innerHTML="<xyz></xyz>",k="hidden"in a,l=1==a.childNodes.length||function(){b.createElement("a");var a=b.createDocumentFragment();return"undefined"==typeof a.cloneNode||"undefined"==typeof a.createDocumentFragment||"undefined"==typeof a.createElement}()}catch(c){k=!0,l=!0}}();var t={elements:n.elements||"abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output picture progress section summary template time video",version:m,shivCSS:n.shivCSS!==!1,supportsUnknownElements:l,shivMethods:n.shivMethods!==!1,type:"default",shivDocument:j,createElement:g,createDocumentFragment:h,addElements:e};a.html5=t,j(b),"object"==typeof module&&module.exports&&(module.exports=t)}("undefined"!=typeof window?window:this,document);
-			</script>
-		<![endif]-->
+      <script>
+      /**
+      * @preserve HTML5 Shiv 3.7.3 | @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed
+      */
+      !function(a,b){function c(a,b){var c=a.createElement("p"),d=a.getElementsByTagName("head")[0]||a.documentElement;return c.innerHTML="x<style>"+b+"</style>",d.insertBefore(c.lastChild,d.firstChild)}function d(){var a=t.elements;return"string"==typeof a?a.split(" "):a}function e(a,b){var c=t.elements;"string"!=typeof c&&(c=c.join(" ")),"string"!=typeof a&&(a=a.join(" ")),t.elements=c+" "+a,j(b)}function f(a){var b=s[a[q]];return b||(b={},r++,a[q]=r,s[r]=b),b}function g(a,c,d){if(c||(c=b),l)return c.createElement(a);d||(d=f(c));var e;return e=d.cache[a]?d.cache[a].cloneNode():p.test(a)?(d.cache[a]=d.createElem(a)).cloneNode():d.createElem(a),!e.canHaveChildren||o.test(a)||e.tagUrn?e:d.frag.appendChild(e)}function h(a,c){if(a||(a=b),l)return a.createDocumentFragment();c=c||f(a);for(var e=c.frag.cloneNode(),g=0,h=d(),i=h.length;i>g;g++)e.createElement(h[g]);return e}function i(a,b){b.cache||(b.cache={},b.createElem=a.createElement,b.createFrag=a.createDocumentFragment,b.frag=b.createFrag()),a.createElement=function(c){return t.shivMethods?g(c,a,b):b.createElem(c)},a.createDocumentFragment=Function("h,f","return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&("+d().join().replace(/[\w\-:]+/g,function(a){return b.createElem(a),b.frag.createElement(a),'c("'+a+'")'})+");return n}")(t,b.frag)}function j(a){a||(a=b);var d=f(a);return!t.shivCSS||k||d.hasCSS||(d.hasCSS=!!c(a,"article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}template{display:none}")),l||i(a,d),a}var k,l,m="3.7.3",n=a.html5||{},o=/^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$/i,p=/^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)$/i,q="_html5shiv",r=0,s={};!function(){try{var a=b.createElement("a");a.innerHTML="<xyz></xyz>",k="hidden"in a,l=1==a.childNodes.length||function(){b.createElement("a");var a=b.createDocumentFragment();return"undefined"==typeof a.cloneNode||"undefined"==typeof a.createDocumentFragment||"undefined"==typeof a.createElement}()}catch(c){k=!0,l=!0}}();var t={elements:n.elements||"abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output picture progress section summary template time video",version:m,shivCSS:n.shivCSS!==!1,supportsUnknownElements:l,shivMethods:n.shivMethods!==!1,type:"default",shivDocument:j,createElement:g,createDocumentFragment:h,addElements:e};a.html5=t,j(b),"object"==typeof module&&module.exports&&(module.exports=t)}("undefined"!=typeof window?window:this,document);
+      </script>
+    <![endif]-->
+  </head>
 
-</head>
-
-<body class="page-home">
-
-
-    <!-- The Modal -->
+  <body class="page-home">
     <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-
-        <!-- Modal content -->
-        <div class="modal-content">
-             <!-- <div class="show-for-small-only">
-               <img src="assets/img/image_banner_mobile.png"> 
-
-            </div>-->
-            <div class="row">
-
-                <div class="modal-video">
-                    <video id="bg-video" controls>
-                        <source src="assets/img/vid/intro.mp4" type="video/mp4">
-                        <source src="assets/img/vid/intro.webm" type="video/webm">
-                        
-                        Your browser does not support HTML5 video.
-                    </video>
-                   
-                </div>
-                
-            </div>
-
+      <span class="close">&times;</span>
+      <div class="modal-content">
+        <div class="row">
+          <div class="modal-video">
+            <video id="bg-video" controls>
+              <source src="assets/img/vid/intro.mp4" type="video/mp4" />
+                <source src="assets/img/vid/intro.webm" type="video/webm" />
+                  Your browser does not support HTML5 video.
+            </video>
+          </div>
         </div>
-
-
+      </div>
     </div>
 
-    <!--<div class="banner">
-			<div class="banner__background js-parallax"></div>
-			<img src="assets/img/media_banner.svg" alt="Media Logo" />
-			<img src="assets/img/logo_banner.svg" alt="Sewing Society Logo" />
-			<p>Stories from the Garement Factories of Bangladesh</p>
-			
-		</div>-->
-<div class=""></div>
-    
- <div class="row">
-     
-     <div class="medium-12 columns">
-         <div class="intro-header-banner">
-             <div class="medium-4 columns home-header ">
-           
-        </div>
-        <div class="medium-12 columns text-center">
-            <br><br><br><br>
+    <div class=""></div>
+    <div class="row">
+      <div class="medium-12 columns">
+        <div class="intro-header-banner">
+          <div class="medium-4 columns home-header ">
+
+          </div>
+          <div class="medium-12 columns text-center">
+            <br /><br /><br /><br />
             <img src="assets/img/logo_home_w.svg" width="120px" alt="Sewing Society Logo" />
-        </div>
-        
-             <div class="second-container">
+          </div>
+
+          <div class="second-container">
             <h3>THE LIVES BEHIND THE LEBEL</h3>
-             <p>We make your clothes is a web-documentary made up of six short films, lasting 15 to 20 minutes in total. Meet some of the humans behind the high street. </p>
-                 </div>
-         </div>
-      
-     </div>
-     
-    
-    </div>
+            <p>We make your clothes is a web-documentary made up of six short films, lasting 15 to 20 minutes in total. Meet some of the humans behind the high street. </p>
+          </div>
+        </div>
+      </div>
+    </div> <!--//row-->
 
     <section class="stories show-for-small-only">
-
-<!--        <h2>Stories</h2>-->
-
-        <div class="row">
-
-            <div class="medium-4 columns">
-                <div class="garment">
-                    <a href="story_mobile.html#01">
-
-                        <img src="assets/img/laizu.jpg" />
-                        <div class="garment__title">
-                            <p>
-                                Laizu, 24<br>
-                                <span>$79/month</span>
-                            </p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="medium-4 columns">
-                <div class="garment">
-                    <a href="story_mobile.html#02">
-
-                        <img src="assets/img/sharif.jpg" />
-                        <div class="garment__title">
-
-                            <p>
-                                Sharif, 25<br>
-                                <span>$78/month</span>
-                            </p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="medium-4 columns">
-                <div class="garment">
-                    <a href="story_mobile.html#03">
-
-                        <img src="assets/img/ema.jpg" />
-                        <div class="garment__title">
-
-                            <p>
-                                Ema, 18<br>
-                                <span>78$/month</span>
-                            </p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
+      <div class="row">
+        <div class="medium-4 columns">
+          <div class="garment">
+            <a href="story_mobile.html#01">
+              <img src="assets/img/laizu.jpg" />
+              <div class="garment__title">
+                <p>
+                Laizu, 24<br />
+                <span>$79/month</span>
+                </p>
+              </div>
+            </a>
+          </div>
         </div>
 
-        <div class="row">
+        <div class="medium-4 columns">
+          <div class="garment">
+            <a href="story_mobile.html#02">
 
-            <div class="medium-4 columns">
-                <div class="garment">
-                    <a href="story_mobile.html#04">
+              <img src="assets/img/sharif.jpg" />
+              <div class="garment__title">
 
-                        <img src="assets/img/shampa.jpg" />
-                        <div class="garment__title">
-
-                            <p>
-                                Shampa, 30<br>
-                                <span>$105/month</span>
-                            </p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="medium-4 columns">
-                <div class="garment">
-                    <a href="story_mobile.html#05">
-
-                        <img src="assets/img/nurabu.jpg" />
-                        <div class="garment__title">
-
-                            <p>
-                                Nurbanu, 25<br>
-                                <span>80 $/month</span>
-                            </p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="medium-4 columns">
-                <div class="garment">
-                    <a href="story_mobile.html#06">
-
-                        <img src="assets/img/nazma.jpg" />
-                        <div class="garment__title">
-
-                            <p>
-                                Nazma, 42<br>
-                                <span>80 $/month</span>
-                            </p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
+                <p>
+                Sharif, 25<br />
+                <span>$78/month</span>
+                </p>
+              </div>
+            </a>
+          </div>
         </div>
+
+        <div class="medium-4 columns">
+          <div class="garment">
+            <a href="story_mobile.html#03">
+
+              <img src="assets/img/ema.jpg" />
+              <div class="garment__title">
+
+                <p>
+                Ema, 18<br />
+                <span>78$/month</span>
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="medium-4 columns">
+          <div class="garment">
+            <a href="story_mobile.html#04">
+
+              <img src="assets/img/shampa.jpg" />
+              <div class="garment__title">
+
+                <p>
+                Shampa, 30<br />
+                <span>$105/month</span>
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="medium-4 columns">
+          <div class="garment">
+            <a href="story_mobile.html#05">
+
+              <img src="assets/img/nurabu.jpg" />
+              <div class="garment__title">
+
+                <p>
+                Nurbanu, 25<br />
+                <span>80 $/month</span>
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="medium-4 columns">
+          <div class="garment">
+            <a href="story_mobile.html#06">
+
+              <img src="assets/img/nazma.jpg" />
+              <div class="garment__title">
+
+                <p>
+                Nazma, 42<br />
+                <span>80 $/month</span>
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
 
     </section>
 
 
     <section class="stories hide-for-small-only">
 
-<!--        <h2>Stories</h2>-->
+      <!--        <h2>Stories</h2>-->
 
-        <div class="row">
-            
-            <div class="medium-4 columns">
-                <div class="garment">
-                    <a href="story.html#panel1">
-                        <img src="assets/img/laizu_hover.jpg" />
-                        <img class="appear-on-hover" src="assets/img/laizu.jpg" />
-                        <div class="garment__title">
-                            <p> I depend on me<br><span>Chapter 01</span></p>
-                            <p class="appear-on-hover">
-                                Laizu, 24<br>
-                                <span>$79 / month</span>
-                            </p>
-                        </div>
-                    </a>
-                </div>
-            </div>
+      <div class="row">
 
-            <div class="medium-4 columns">
-                <div class="garment">
-                    <a href="story.html#panel2">
-                        <img src="assets/img/sharif_hover.jpg" />
-                        <img class="appear-on-hover" src="assets/img/sharif.jpg" />
-                        <div class="garment__title">
-                            <p>Hijra: out of the closet<br><span>Chapter 02</span></p>
-                            
-                            <p class="appear-on-hover">
-                                Sharif, 25<br>
-                                <span>$78 / month</span>
-                            </p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="medium-4 columns">
-                <div class="garment">
-                    <a href="story.html#panel3">
-                        <img src="assets/img/ema_hover.jpg" />
-                        <img class="appear-on-hover" src="assets/img/ema.jpg" />
-                        <div class="garment__title">
-                            <p>You are what you wear<br><span>Chapter 03</span></p>
-                            <p class="appear-on-hover">
-                                 Ema, 18<br>
-                                <span>$78 / month</span>
-                            </p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            </div>
-
-        <div class="row">
-
-            <div class="medium-4 columns">
-                <div class="garment">
-                    <a href="story.html#panel4">
-                        <img src="assets/img/shampa_hover.jpg" />
-                        <img class="appear-on-hover" src="assets/img/shampa.jpg" />
-                        <div class="garment__title">
-                            <p>Discounted dreams<br><span>Chapter 04</span></p>
-                            <p class="appear-on-hover">
-                                Shampa, 30<br>
-                                <span>$105 / month</span>
-                            </p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-        
-
-            <div class="medium-4 columns">
-                <div class="garment">
-                    <a href="story.html#panel5">
-                        <img src="assets/img/nurabu_hover.jpg" />
-                        <img class="appear-on-hover" src="assets/img/nurabu.jpg" />
-                        <div class="garment__title">
-                            <p>A tough bargain<br><span>Chapter 05</span></p>
-                            <p class="appear-on-hover">
-                                Nurbanu, 25<br>
-                                <span>$86 / month</span>
-                            </p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="medium-4 columns">
-                <div class="garment">
-                    <a href="story.html#panel6">
-                        <img src="assets/img/nazma_hover.jpg" />
-                        <img class="appear-on-hover" src="assets/img/nazma.jpg" />
-                        <div class="garment__title">
-                            <p>The fight must go on<br><span>Chapter 06</span></p>
-                            <p class="appear-on-hover">
-                                Nazma, 42<br>
-                                <span></span>
-                            </p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
+        <div class="medium-4 columns">
+          <div class="garment">
+            <a href="story.html#panel1">
+              <img src="assets/img/laizu_hover.jpg" />
+              <img class="appear-on-hover" src="assets/img/laizu.jpg" />
+              <div class="garment__title">
+                <p> I depend on me<br /><span>Chapter 01</span></p>
+                <p class="appear-on-hover">
+                Laizu, 24<br />
+                <span>$79 / month</span>
+                </p>
+              </div>
+            </a>
+          </div>
         </div>
+
+        <div class="medium-4 columns">
+          <div class="garment">
+            <a href="story.html#panel2">
+              <img src="assets/img/sharif_hover.jpg" />
+              <img class="appear-on-hover" src="assets/img/sharif.jpg" />
+              <div class="garment__title">
+                <p>Hijra: out of the closet<br /><span>Chapter 02</span></p>
+
+                <p class="appear-on-hover">
+                Sharif, 25<br />
+                <span>$78 / month</span>
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="medium-4 columns">
+          <div class="garment">
+            <a href="story.html#panel3">
+              <img src="assets/img/ema_hover.jpg" />
+              <img class="appear-on-hover" src="assets/img/ema.jpg" />
+              <div class="garment__title">
+                <p>You are what you wear<br /><span>Chapter 03</span></p>
+                <p class="appear-on-hover">
+                Ema, 18<br />
+                <span>$78 / month</span>
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="medium-4 columns">
+          <div class="garment">
+            <a href="story.html#panel4">
+              <img src="assets/img/shampa_hover.jpg" />
+              <img class="appear-on-hover" src="assets/img/shampa.jpg" />
+              <div class="garment__title">
+                <p>Discounted dreams<br /><span>Chapter 04</span></p>
+                <p class="appear-on-hover">
+                Shampa, 30<br />
+                <span>$105 / month</span>
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+
+
+        <div class="medium-4 columns">
+          <div class="garment">
+            <a href="story.html#panel5">
+              <img src="assets/img/nurabu_hover.jpg" />
+              <img class="appear-on-hover" src="assets/img/nurabu.jpg" />
+              <div class="garment__title">
+                <p>A tough bargain<br /><span>Chapter 05</span></p>
+                <p class="appear-on-hover">
+                Nurbanu, 25<br />
+                <span>$86 / month</span>
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="medium-4 columns">
+          <div class="garment">
+            <a href="story.html#panel6">
+              <img src="assets/img/nazma_hover.jpg" />
+              <img class="appear-on-hover" src="assets/img/nazma.jpg" />
+              <div class="garment__title">
+                <p>The fight must go on<br /><span>Chapter 06</span></p>
+                <p class="appear-on-hover">
+                Nazma, 42<br />
+                <span></span>
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
 
     </section>
 
     <section class="gallery">
 
-        
 
-        <div class="row">
 
-            <div class="medium-3 columns gallery-item">
-                <a href="gallery/index.html?slick1=1"> <img src="assets/img/workers/wr-01.jpg"/></a>
-                <p>
-                    Hamida, 50<br>
-                    <span>$73 / month</span>
-                </p>
+      <div class="row">
 
-            </div>
-
-            <div class="medium-3 columns gallery-item">
-                <a href="gallery/index.html?slick1=2"><img src="assets/img/workers/wr-02.jpg" /></a>
-                <p>
-                    Shahida, 46<br>
-                    <span>$79 / month</span>
-                </p>
-            </div>
-
-            <div class="medium-3 columns gallery-item">
-                <a href="gallery/index.html?slick1=3"><img src="assets/img/workers/wr-03.jpg" /></a>
-                <p>
-                    Towhidal, 31<br>
-                    <span>$88 / month</span>
-                </p>
-            </div>
-
-            <div class="medium-3 columns gallery-item">
-                <a href="gallery/index.html?slick1=4"><img src="assets/img/workers/wr-04.jpg" /></a>
-                <p>
-                    Parveen, 33<br>
-                    <span>$97 / month</span>
-                </p>
-            </div>
+        <div class="medium-3 columns gallery-item">
+          <a href="gallery/index.html?slick1=1"> <img src="assets/img/workers/wr-01.jpg"/></a>
+          <p>
+          Hamida, 50<br />
+          <span>$73 / month</span>
+          </p>
 
         </div>
 
-        <div class="row">
-
-            <div class="medium-3 columns gallery-item">
-                <a href="gallery/index.html?slick1=5"><img src="assets/img/workers/wr-05.jpg" /></a>
-                <p>
-                    Lipi, 30<br>
-                    <span>$85 / month</span>
-                </p>
-            </div>
-
-            <div class="medium-3 columns gallery-item">
-                <a href="gallery/index.html?slick1=6"><img src="assets/img/workers/wr-06.jpg" /></a>
-                <p>
-                    Shopna, 32<br>
-                    <span>$76 / month</span>
-                </p>
-            </div>
-
-            <div class="medium-3 columns gallery-item">
-                <a href="gallery/index.html?slick1=7"><img src="assets/img/workers/wr-07.jpg" /></a>
-                <p>
-                    Rashida, 42<br>
-                    <span>$71 / month</span>
-                </p>
-            </div>
-
-            <div class="medium-3 columns gallery-item">
-                <a href="gallery/index.html?slick1=8"><img src="assets/img/workers/wr-08.jpg" /></a>
-                <p>
-                    Nipa, 20<br>
-                    <span>$66 / month</span>
-                </p>
-            </div>
-
+        <div class="medium-3 columns gallery-item">
+          <a href="gallery/index.html?slick1=2"><img src="assets/img/workers/wr-02.jpg" /></a>
+          <p>
+          Shahida, 46<br />
+          <span>$79 / month</span>
+          </p>
         </div>
-        
-        <div class="row">
 
-            <div class="medium-3 columns gallery-item">
-                <a href="gallery/index.html?slick1=9"><img src="assets/img/workers/wr-09.jpg" /></a>
-                <p>
-                    Bellal, 25<br>
-                    <span>$79 / month</span>
-                </p>
-            </div>
-
-            <div class="medium-3 columns gallery-item">
-                <a href="gallery/index.html?slick1=10"><img src="assets/img/workers/wr-010.jpg" /></a>
-                <p>
-                    Jasmin, 25 <br>
-                    <span>$76 / month</span>
-                </p>
-            </div>
-
-            <div class="medium-3 columns gallery-item">
-                <a href="gallery/index.html?slick1=11"><img src="assets/img/workers/wr-011.jpg" /></a>
-                <p>
-                    Zaheda, 40<br>
-                    <span>$92 / month</span>
-                </p>
-            </div>
-
-            <div class="medium-3 columns gallery-item">
-                <a href="gallery/index.html?slick1=12"><img src="assets/img/workers/wr-012.jpg" /></a>
-                <p>
-                    Seema, 27<br>
-                    <span>$85 / month</span>
-                </p>
-            </div>
-
+        <div class="medium-3 columns gallery-item">
+          <a href="gallery/index.html?slick1=3"><img src="assets/img/workers/wr-03.jpg" /></a>
+          <p>
+          Towhidal, 31<br />
+          <span>$88 / month</span>
+          </p>
         </div>
-        
-        <div class="row">
 
-            <div class="medium-3 columns gallery-item">
-                <a href="gallery/index.html?slick1=13"><img src="assets/img/workers/wr-013.jpg" /></a>
-                <p>
-                    Dilruba, 40<br>
-                    <span>$88 / month</span>
-                </p>
-            </div>
-
-            <div class="medium-3 columns gallery-item">
-                <a href="gallery/index.html?slick1=14"><img src="assets/img/workers/wr-014.jpg" /></a>
-                <p>
-                    Mina, 21 <br>
-                    <span>$73 / month</span>
-                </p>
-            </div>
-
-            <div class="medium-3 columns gallery-item">
-                <a href="gallery/index.html?slick1=15"><img src="assets/img/workers/wr-015.jpg" /></a>
-                <p>
-                    Rita, 28<br>
-                    <span>$103 / month</span>
-                </p>
-            </div>
-
-            <div class="medium-3 columns gallery-item">
-                <a href="gallery/index.html?slick1=16"><img src="assets/img/workers/wr-016.jpg" /></a>
-                <p>
-                    Ashizur, 24<br>
-                    <span>$97 / month</span>
-                </p>
-            </div>
-
+        <div class="medium-3 columns gallery-item">
+          <a href="gallery/index.html?slick1=4"><img src="assets/img/workers/wr-04.jpg" /></a>
+          <p>
+          Parveen, 33<br />
+          <span>$97 / month</span>
+          </p>
         </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="medium-3 columns gallery-item">
+          <a href="gallery/index.html?slick1=5"><img src="assets/img/workers/wr-05.jpg" /></a>
+          <p>
+          Lipi, 30<br />
+          <span>$85 / month</span>
+          </p>
+        </div>
+
+        <div class="medium-3 columns gallery-item">
+          <a href="gallery/index.html?slick1=6"><img src="assets/img/workers/wr-06.jpg" /></a>
+          <p>
+          Shopna, 32<br />
+          <span>$76 / month</span>
+          </p>
+        </div>
+
+        <div class="medium-3 columns gallery-item">
+          <a href="gallery/index.html?slick1=7"><img src="assets/img/workers/wr-07.jpg" /></a>
+          <p>
+          Rashida, 42<br />
+          <span>$71 / month</span>
+          </p>
+        </div>
+
+        <div class="medium-3 columns gallery-item">
+          <a href="gallery/index.html?slick1=8"><img src="assets/img/workers/wr-08.jpg" /></a>
+          <p>
+          Nipa, 20<br />
+          <span>$66 / month</span>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="medium-3 columns gallery-item">
+          <a href="gallery/index.html?slick1=9"><img src="assets/img/workers/wr-09.jpg" /></a>
+          <p>
+          Bellal, 25<br />
+          <span>$79 / month</span>
+          </p>
+        </div>
+
+        <div class="medium-3 columns gallery-item">
+          <a href="gallery/index.html?slick1=10"><img src="assets/img/workers/wr-010.jpg" /></a>
+          <p>
+          Jasmin, 25 <br />
+          <span>$76 / month</span>
+          </p>
+        </div>
+
+        <div class="medium-3 columns gallery-item">
+          <a href="gallery/index.html?slick1=11"><img src="assets/img/workers/wr-011.jpg" /></a>
+          <p>
+          Zaheda, 40<br />
+          <span>$92 / month</span>
+          </p>
+        </div>
+
+        <div class="medium-3 columns gallery-item">
+          <a href="gallery/index.html?slick1=12"><img src="assets/img/workers/wr-012.jpg" /></a>
+          <p>
+          Seema, 27<br />
+          <span>$85 / month</span>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="medium-3 columns gallery-item">
+          <a href="gallery/index.html?slick1=13"><img src="assets/img/workers/wr-013.jpg" /></a>
+          <p>
+          Dilruba, 40<br />
+          <span>$88 / month</span>
+          </p>
+        </div>
+
+        <div class="medium-3 columns gallery-item">
+          <a href="gallery/index.html?slick1=14"><img src="assets/img/workers/wr-014.jpg" /></a>
+          <p>
+          Mina, 21 <br />
+          <span>$73 / month</span>
+          </p>
+        </div>
+
+        <div class="medium-3 columns gallery-item">
+          <a href="gallery/index.html?slick1=15"><img src="assets/img/workers/wr-015.jpg" /></a>
+          <p>
+          Rita, 28<br />
+          <span>$103 / month</span>
+          </p>
+        </div>
+
+        <div class="medium-3 columns gallery-item">
+          <a href="gallery/index.html?slick1=16"><img src="assets/img/workers/wr-016.jpg" /></a>
+          <p>
+          Ashizur, 24<br />
+          <span>$97 / month</span>
+          </p>
+        </div>
+
+      </div>
 
     </section>
 
     <section class="project-by">
 
-        <div class="row">
-            <div class="columns text-center">
-                <img class="logo" src="assets/img/logo.svg" width="70px" />
-                <p><b>This is a project by On Our Radar, made possible thanks to funding from the European Journalism Centre (EJC), Innovation in Development Reporting (IDR)</b></p>
-            </div>
+      <div class="row">
+        <div class="columns text-center">
+          <img class="logo" src="assets/img/logo.svg" width="70px" />
+          <p><strong>This is a project by On Our Radar, made possible thanks to funding from the European Journalism Centre (EJC), Innovation in Development Reporting (IDR)</strong></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="medium-3 columns">
+          <h3>Produced, filmed, directed</h3>
+          <p> Davide Morandini, Paul Myles </p>
+          <h3>Editing</h3>
+          <p>Davide Morandini</p>
+          <h3>Photography</h3>
+          <p>Davide Morandini, Paul Myles</p>
+          <h3>Photography post-production</h3>
+          <p>Nicola Avanzinelli</p>
         </div>
 
-        <div class="row">
+        <div class="medium-3 medium-offset-1 columns">
+          <h3>Interactive Concept</h3>
+          <p>May Abdalla, Isacco Chiaf, Davide Morandini, Paul Myles </p>
+          <h3>Web design and development</h3>
+          <p>Isacco Chiaf, Manuele Sarfatti</p>
+          <h3>Fixers and translators</h3>
+          <p>Nahidul Hassan Nayan, Imran Rahman, Farah Tanzir</p>
+          <h3>Music</h3>
+          <p>19 Sound</p>
+        </div>
 
-            <div class="medium-3 columns">
+        <div class="medium-3 medium-offset-1 columns">
+          <h3>Special Thanks</h3>
+          <p> all the team at AWAJ foundation, Olivia Windham Stewart, Florence Myles and Renasha Khan</p>
+          <img src="assets/img/oor_logo.png" />
+        </div>
 
-                <h3>Produced, filmed, directed</h3>
-                <p> Davide Morandini, Paul Myles </p>
-
-                <h3>Editing</h3>
-                <p>Davide Morandini</p>
-
-                <h3>Photography</h3>
-                <p>Davide Morandini, Paul Myles</p>
-
-                <h3>Photography post-production</h3>
-                <p>Nicola Avanzinelli</p>
-            </div>
-
-            <div class="medium-3 medium-offset-1 columns">
-
-                <h3>Interactive Concept</h3>
-                <p>May Abdalla, Isacco Chiaf, Davide Morandini, Paul Myles </p>
-
-                <h3>Web design and development</h3>
-                <p>Isacco Chiaf, Manuele Sarfatti</p>
-
-                <h3>Fixers and translators</h3>
-                <p>Nahidul Hassan Nayan, Imran Rahman, Farah Tanzir</p>
-
-                <h3>Music</h3>
-                <p>19 Sound</p>
-            </div>
-
-            <div class="medium-3 medium-offset-1 columns">
-
-                <h3>Special Thanks</h3>
-                <p> all the team at AWAJ foundation, Olivia Windham Stewart, Florence Myles and Renasha Khan</p>
-
-                <img src="assets/img/oor_logo.png" />
-            </div>
-
-            <div class="medium-1 columns"></div>
-
+        <div class="medium-1 columns"></div>
     </section>
 
     <footer>
-        <div class="row">
-            <div class="columns text-center">
-                <p>Footer copyright 2017</p>
-            </div>
+      <div class="row">
+        <div class="columns text-center">
+          <p>Footer copyright 2017</p>
         </div>
+      </div>
     </footer>
 
     <div class="appearing-header" aria-hidden="true">
-        <div class="story-header-index row">
-            <div class="small-4 columns">
-                <img class="float-left media-logo" src="assets/img/logo_internazionale.png" width="150px" alt="Media Logo" />
-            </div>
-            <div class="small-4 columns text-center header-logo">
-               <a href="index.html"> <img src="assets/img/logo_w.svg" alt="Sewing Society Logo" /></a>
-            </div>
-            <div class="small-4 columns menu-icons hide-for-small-only">
-                <a href="#" id="myBtn2"><img src="assets/img/play.svg" width="15px" /><span class="show-for-sr">Intro</span></a>
-                <a href="#"><img src="assets/img/share_tw_w.svg" width="20px" /><span class="show-for-sr">Twitter</span></a>
-                <a href="#"><img src="assets/img/share_fb_w.svg" width="10px" /><span class="show-for-sr">Facebook</span></a>
-                <a href="about.html"><img src="assets/img/sh_bag_w.svg" width="20px" /><span class="show-for-sr">Info</span></a>
-            </div>
-            <div class="medium-2 columns show-for-small-only">
-               
-            <a class="nav-mobile-menu" id="nav-toggle" onclick="openNav()">&#9776;</a>
-                   
+      <div class="story-header-index row">
+        <div class="small-4 columns">
+          <img class="float-left media-logo" src="assets/img/logo_internazionale.png" width="150px" alt="Media Logo" />
         </div>
+        <div class="small-4 columns text-center header-logo">
+          <a href="index.html"> <img src="assets/img/logo_w.svg" alt="Sewing Society Logo" /></a>
         </div>
+        <div class="small-4 columns menu-icons hide-for-small-only">
+          <a href="#" id="myBtn2"><img src="assets/img/play.svg" width="15px" /><span class="show-for-sr">Intro</span></a>
+          <a href="#"><img src="assets/img/share_tw_w.svg" width="20px" /><span class="show-for-sr">Twitter</span></a>
+          <a href="#"><img src="assets/img/share_fb_w.svg" width="10px" /><span class="show-for-sr">Facebook</span></a>
+          <a href="about.html"><img src="assets/img/sh_bag_w.svg" width="20px" /><span class="show-for-sr">Info</span></a>
+        </div>
+        <div class="medium-2 columns show-for-small-only">
+          <a class="nav-mobile-menu" id="nav-toggle" onclick="openNav()">&#9776;</a>
+        </div>
+      </div>
     </div>
-        
-       <div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-      <a href="about.html"> <img src="assets/img/sh_bag_m.svg" /> About</a>
-      
-    <p>Share:</p>
-    <a href="#"> <img src="assets/img/share_tw_m.svg" /> Twitter</a>
-    <a href="#"> <img src="assets/img/share_fb_m.svg" />Facebook</a>
-      
-    
-  </div>
-</div>
 
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="about.html"> <img src="assets/img/sh_bag_m.svg" /> About</a>
 
-    <!--<div class="reveal" id="video-modal" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
-			<button class="close-button" data-close aria-label="Close modal" type="button">
-				
-			</button>
-			<div data-type="vimeo" data-video-id="186436301"></div>
-		</div>-->
+        <p>Share:</p>
+        <a href="#"> <img src="assets/img/share_tw_m.svg" /> Twitter</a>
+        <a href="#"> <img src="assets/img/share_fb_m.svg" /> Facebook</a>
+      </div>
+    </div>
 
-    <script src="assets/js/app.js"></script>
-    <script>
-        // Get the modal
-        var modal = document.getElementById('myModal');
+      <script src="assets/js/app.js"></script>
+      <script src="assets/js/videomodal.js"></script>
 
-        // Get the button that opens the modal
-        //var btn = document.getElementById("myBtn");
-        var btn2 = document.getElementById("myBtn2");
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        var videobtn = document.getElementById('this-btn-open');
-        var videocontent = document.getElementsByClassName("modal-video")[0];
-         var videointro = document.getElementById("bg-video");
-        
-
-
-
-
-        // When the user clicks the button, open the modal 
-        
-
-       /* btn.onclick = function() {
-            modal.style.display = "block";
-            videocontent.style.display = "block";
-            videointro.play();
-        }*/
-        
-        btn2.onclick = function(e) {
-            modal.style.display = "block";
-            videocontent.style.display = "block";
-            videointro.play();
-            e.preventDefault();
-        }
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-            modal.style.display = "none";
-            videocontent.style.display = "none";
-            videointro.pause(); 
-            videointro.load();
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-                videocontent.style.display = "none";
-                videointro.pause(); 
-                videointro.load();
-            }
-        }
-
-
-
-        videobtn.onclick = function() {
-            videocontent.style.display = "block";
-            videointro.play(); 
-
-        }
-
-        function openNav() {
-    document.getElementById("myNav").style.display = "block";
-}
-
-function closeNav() {
-    document.getElementById("myNav").style.display = "none";
-}
-    </script>
-
-</body>
+  </body>
 
 </html>
