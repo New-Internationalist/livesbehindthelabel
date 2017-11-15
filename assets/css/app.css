@@ -1691,14 +1691,14 @@ screen and (min-width: 40em) {
 
 a {
     line-height: inherit;
-    color: #1779ba;
+    color: #6ecad0;
     text-decoration: none;
     cursor: pointer
 }
 
 a:hover,
 a:focus {
-    color: #1468a0
+    color: #9bd0d5;
 }
 
 a img {
@@ -2131,7 +2131,7 @@ screen and (min-width: 40em) {
 }
 
 .tabs.primary {
-    background: #1779ba
+    background: #6ecad0
 }
 
 .tabs.primary>li>a {
@@ -2152,18 +2152,18 @@ screen and (min-width: 40em) {
     padding: 1.25rem 1.5rem;
     font-size: .75rem;
     line-height: 1;
-    color: #1779ba
+    color: #6ecad0
 }
 
 .tabs-title>a:hover {
     background: #fefefe;
-    color: #1468a0
+    color: #6ecad0
 }
 
 .tabs-title>a:focus,
 .tabs-title>a[aria-selected='true'] {
     background: #e6e6e6;
-    color: #1779ba
+    color: #6ecad0
 }
 
 .tabs-content {
@@ -4380,7 +4380,7 @@ footer p {
 .appearing-header {
     position: fixed;
     width: 100%;
-    background: #191919;
+    background: #d03022; /*#191919*/;
     top: 0px;
     -webkit-transition: -webkit-transform 200ms ease-out;
     transition: -webkit-transform 200ms ease-out;
@@ -4402,11 +4402,10 @@ footer p {
     
 }
 .story-header-index {
-    
     width: 100%;
-     background: #191919;
-    padding-top: 30px;
-    padding-bottom: 30px;
+     background: #d03022;/*#191919*/;
+    padding-top: 20px;
+    padding-bottom: 20px;
     height: 90px;
     z-index: 10000;
 }
@@ -4888,7 +4887,6 @@ footer p {
 }
 #this-btn-open img {
     margin-right: 5px;
-        
 }
 
 .mobile-story-container {
@@ -4899,13 +4897,10 @@ footer p {
     position: absolute;
     margin: 30px 0px 0px 85%;
     font-size: 20px;
-    color: black;
+    color: #fff;
     top: 0;
     float: right;
 }
-
-
-
 
 .overlay {
     height: 100%;
@@ -4915,7 +4910,7 @@ footer p {
     z-index: 10000;
     top: 0;
     left: 0;
-    background-color: rgb(0,0,0);
+    background-color: rgb(0,0,0); /* If we want to make red we can use 208, 48, 34*/
     background-color: rgba(0,0,0, 0.9);
     overflow-x: hidden;
      -webkit-animation-name: animateopacity;
@@ -4984,8 +4979,7 @@ footer p {
 
 
 .header-logo img {
-    padding-top: 5px;
-    width: 60px;
+    width: 100px;
 }
 
 .nav-mobile-menu-story {
@@ -5032,11 +5026,11 @@ footer p {
 
 .header-story-container {
     width: 100%;
-          background-color: #191919;
+    background-color: #d03022;
 }
 
 .second-container {
-    padding-top: 250px;
+    padding-top: 50px;
 }
 
 #closevideo {
