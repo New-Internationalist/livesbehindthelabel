@@ -8,23 +8,11 @@
   </head>
 
   <body class="page-home">
-
     <!--#include virtual="appearing-header.html"-->
 
-    <div id="myModal" class="modal">
-      <span class="close">&times;</span>
-      <div class="modal-content">
-        <div class="row">
-          <div class="modal-video">
-            <video id="bg-video" controls>
-              <source src="assets/img/vid/intro.mp4" type="video/mp4" />
-              <source src="assets/img/vid/intro.webm" type="video/webm" />
-              Your browser does not support HTML5 video.
-            </video>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!--#include virtual="my-nav.html"-->
+
+    <!--#include virtual="my-modal.html"-->
 
     <div class=""></div>
     <div class="row">
@@ -89,11 +77,9 @@
             </a>
           </div>
         </div>
-
       </div>
 
       <div class="row">
-
         <div class="medium-4 columns">
           <div class="garment">
             <a href="story_mobile.html#04">
@@ -136,9 +122,7 @@
             </a>
           </div>
         </div>
-
       </div>
-
     </section>
 
 
@@ -253,6 +237,8 @@
     </section>
 
     <section class="gallery">
+      <h2>Photo gallery</h2>
+      <p class="text-center">Click on one of the worker&#8217;s images to enlarge it.</p>
       <div class="row">
         <div class="medium-3 columns gallery-item">
           <a href="gallery/index.html?slick1=1"> <img src="assets/img/workers/wr-01.jpg"/></a>
@@ -380,7 +366,6 @@
 
     <!--#include virtual="footer.html"-->
 
-    <!--#include virtual="my-nav.html"-->
 
     <script src="assets/js/app.js"></script>
     <script src="assets/js/videomodal.js"></script>
