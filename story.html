@@ -55,24 +55,7 @@
   </head>
 
   <body class="page-stories">
-    <div class="header-story-container">
-      <div class="story-header-index row">
-        <div class="medium-4 columns">
-          <a href="https://newint.org">
-            <img class="float-left media-logo" src="assets/img/newint-logo-200px.png" width="200" alt="New Internationalist logo" />
-          </a>
-        </div>
-        <div class="medium-4 columns text-center header-logo">
-          <a href="home.html"> <img src="assets/img/LBL-logo-w-on-r-100px.png" alt="The Lives Behind the Label" /></a>
-        </div>
-        <div class="medium-4 columns menu-icons">
-          <a href="#"><img src="assets/img/share_tw_w.svg" width="20px" /><span class="show-for-sr">Twitter</span></a>
-          <a href="#"><img src="assets/img/share_fb_w.svg" width="10px" /><span class="show-for-sr">Facebook</span></a>
-          <a href="about.html"><img src="assets/img/sh_bag_w.svg" width="20px" /><span class="show-for-sr">Info</span></a>
-        </div>
-      </div>
-    </div>
-
+    <!--#include virtual="appearing-header.html"-->
     <section class="story-stories tabs-content" data-tabs-content="the-tabs">
       <div class="row tabs-panel" id="panel1" role="tabpanel">
         <div class="medium-6 columns">
@@ -256,5 +239,8 @@
     </div>
 
     <script src="assets/js/app.js"></script>
+    <script>
+      document.getElementById('myBtn2').style.display="none"; // because we include the header now, we have to hide the intro video play btn
+    </script>
   </body>
 </html>
