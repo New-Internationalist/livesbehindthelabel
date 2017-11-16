@@ -4167,11 +4167,11 @@ body.is-reveal-open {
 
 .reveal {
     border: none;
-    background: #000000;
+    background: transparent;
     overflow: visible;
-    padding: 0;
-    width: 80%;
-    max-width: 63rem
+    padding: 1em;
+    width: 100%;
+    /*max-width: 63rem*/
 }
 
 .reveal .close-button {
@@ -4622,10 +4622,9 @@ footer p img {
 }
 
 .page-stories .reveal-overlay {
-    background: black;
-    top: 90px;
-    bottom: 125px;
+    background-color: rgba(0,0,0,0.8);
     overflow-y: hidden
+    width:100%;
 }
 
 .page-stories .reveal {
@@ -4652,7 +4651,6 @@ footer p img {
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
     padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;
@@ -4679,6 +4677,7 @@ footer p img {
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
     animation-duration: 0.4s
+    z-index: 999; /* Sit on top */
 }
 
 /* Add Animation */
