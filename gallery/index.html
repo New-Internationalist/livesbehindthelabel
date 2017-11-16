@@ -1,21 +1,11 @@
 <!DOCTYPE html>
 <html>
-<head>
- <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <script src="https://use.typekit.net/gcz0kcw.js"></script>
-    <script>
-        try {
-            Typekit.load({
-                async: false
-            });
-        } catch (e) {}
-
-    </script>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -24,6 +14,7 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
     <meta name="theme-color" content="#ffffff">
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bevan|Lato:300,300i,400,400i,700">
     <link rel="stylesheet" href="../assets/css/app.css">
 
     <meta property="og:type" content="website">
@@ -35,223 +26,175 @@
 
     <!-- JS active/detect mobile -->
     <script>
-        (function(h, b) {
-            h.className = h.className.replace(/\bno-js\b/, 'js');
-            window.onerror = function() {
-                h.className = h.className.replace(/\bjs\b/, 'no-js');
-            }
-            if (b.indexOf('mobi') > 0 || b.indexOf('blackberry') > 0 || b.indexOf('palm') > 0) h.className += ' mobile';
-            else h.className += ' desktop';
-        })(document.documentElement, navigator.userAgent.toLowerCase())
+(function(h, b) {
+  h.className = h.className.replace(/\bno-js\b/, 'js');
+  window.onerror = function() {
+    h.className = h.className.replace(/\bjs\b/, 'no-js');
+  }
+  if (b.indexOf('mobi') > 0 || b.indexOf('blackberry') > 0 || b.indexOf('palm') > 0) h.className += ' mobile';
+  else h.className += ' desktop';
+})(document.documentElement, navigator.userAgent.toLowerCase())
 
     </script>
 
 
     <!--[if lte IE 9]>
-			<script>
-				/**
-				* @preserve HTML5 Shiv 3.7.3 | @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed
-				*/
-				!function(a,b){function c(a,b){var c=a.createElement("p"),d=a.getElementsByTagName("head")[0]||a.documentElement;return c.innerHTML="x<style>"+b+"</style>",d.insertBefore(c.lastChild,d.firstChild)}function d(){var a=t.elements;return"string"==typeof a?a.split(" "):a}function e(a,b){var c=t.elements;"string"!=typeof c&&(c=c.join(" ")),"string"!=typeof a&&(a=a.join(" ")),t.elements=c+" "+a,j(b)}function f(a){var b=s[a[q]];return b||(b={},r++,a[q]=r,s[r]=b),b}function g(a,c,d){if(c||(c=b),l)return c.createElement(a);d||(d=f(c));var e;return e=d.cache[a]?d.cache[a].cloneNode():p.test(a)?(d.cache[a]=d.createElem(a)).cloneNode():d.createElem(a),!e.canHaveChildren||o.test(a)||e.tagUrn?e:d.frag.appendChild(e)}function h(a,c){if(a||(a=b),l)return a.createDocumentFragment();c=c||f(a);for(var e=c.frag.cloneNode(),g=0,h=d(),i=h.length;i>g;g++)e.createElement(h[g]);return e}function i(a,b){b.cache||(b.cache={},b.createElem=a.createElement,b.createFrag=a.createDocumentFragment,b.frag=b.createFrag()),a.createElement=function(c){return t.shivMethods?g(c,a,b):b.createElem(c)},a.createDocumentFragment=Function("h,f","return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&("+d().join().replace(/[\w\-:]+/g,function(a){return b.createElem(a),b.frag.createElement(a),'c("'+a+'")'})+");return n}")(t,b.frag)}function j(a){a||(a=b);var d=f(a);return!t.shivCSS||k||d.hasCSS||(d.hasCSS=!!c(a,"article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}template{display:none}")),l||i(a,d),a}var k,l,m="3.7.3",n=a.html5||{},o=/^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$/i,p=/^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)$/i,q="_html5shiv",r=0,s={};!function(){try{var a=b.createElement("a");a.innerHTML="<xyz></xyz>",k="hidden"in a,l=1==a.childNodes.length||function(){b.createElement("a");var a=b.createDocumentFragment();return"undefined"==typeof a.cloneNode||"undefined"==typeof a.createDocumentFragment||"undefined"==typeof a.createElement}()}catch(c){k=!0,l=!0}}();var t={elements:n.elements||"abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output picture progress section summary template time video",version:m,shivCSS:n.shivCSS!==!1,supportsUnknownElements:l,shivMethods:n.shivMethods!==!1,type:"default",shivDocument:j,createElement:g,createDocumentFragment:h,addElements:e};a.html5=t,j(b),"object"==typeof module&&module.exports&&(module.exports=t)}("undefined"!=typeof window?window:this,document);
-			</script>
-		<![endif]-->
+      <script>
+      /**
+      * @preserve HTML5 Shiv 3.7.3 | @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed
+      */
+      !function(a,b){function c(a,b){var c=a.createElement("p"),d=a.getElementsByTagName("head")[0]||a.documentElement;return c.innerHTML="x<style>"+b+"</style>",d.insertBefore(c.lastChild,d.firstChild)}function d(){var a=t.elements;return"string"==typeof a?a.split(" "):a}function e(a,b){var c=t.elements;"string"!=typeof c&&(c=c.join(" ")),"string"!=typeof a&&(a=a.join(" ")),t.elements=c+" "+a,j(b)}function f(a){var b=s[a[q]];return b||(b={},r++,a[q]=r,s[r]=b),b}function g(a,c,d){if(c||(c=b),l)return c.createElement(a);d||(d=f(c));var e;return e=d.cache[a]?d.cache[a].cloneNode():p.test(a)?(d.cache[a]=d.createElem(a)).cloneNode():d.createElem(a),!e.canHaveChildren||o.test(a)||e.tagUrn?e:d.frag.appendChild(e)}function h(a,c){if(a||(a=b),l)return a.createDocumentFragment();c=c||f(a);for(var e=c.frag.cloneNode(),g=0,h=d(),i=h.length;i>g;g++)e.createElement(h[g]);return e}function i(a,b){b.cache||(b.cache={},b.createElem=a.createElement,b.createFrag=a.createDocumentFragment,b.frag=b.createFrag()),a.createElement=function(c){return t.shivMethods?g(c,a,b):b.createElem(c)},a.createDocumentFragment=Function("h,f","return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&("+d().join().replace(/[\w\-:]+/g,function(a){return b.createElem(a),b.frag.createElement(a),'c("'+a+'")'})+");return n}")(t,b.frag)}function j(a){a||(a=b);var d=f(a);return!t.shivCSS||k||d.hasCSS||(d.hasCSS=!!c(a,"article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}template{display:none}")),l||i(a,d),a}var k,l,m="3.7.3",n=a.html5||{},o=/^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$/i,p=/^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)$/i,q="_html5shiv",r=0,s={};!function(){try{var a=b.createElement("a");a.innerHTML="<xyz></xyz>",k="hidden"in a,l=1==a.childNodes.length||function(){b.createElement("a");var a=b.createDocumentFragment();return"undefined"==typeof a.cloneNode||"undefined"==typeof a.createDocumentFragment||"undefined"==typeof a.createElement}()}catch(c){k=!0,l=!0}}();var t={elements:n.elements||"abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output picture progress section summary template time video",version:m,shivCSS:n.shivCSS!==!1,supportsUnknownElements:l,shivMethods:n.shivMethods!==!1,type:"default",shivDocument:j,createElement:g,createDocumentFragment:h,addElements:e};a.html5=t,j(b),"object"==typeof module&&module.exports&&(module.exports=t)}("undefined"!=typeof window?window:this,document);
+      </script>
+    <![endif]-->
 
-  <link rel="stylesheet" type="text/css" href="./slick/slick.css">
-  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
-  <style type="text/css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+    <style type="text/css">
       @media screen and (max-width: 39.9375em) {
-           div.slick-slide img {
-        max-width:100%;
-      margin: 0 auto
-    }
-          
+        div.slick-slide img {
+          max-width:100%;
+          margin: 0 auto
+        }
       }
-      
+
       @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-          
-           div.slick-slide img {
-        max-width:60%;
-      margin: 0 auto
+
+        div.slick-slide img {
+          max-width:60%;
+          margin: 0 auto
+        }
       }
-      }
-      
-    html, body {
-      margin: 0;
-      padding: 0;
+
+      html, body {
+        margin: 0;
+        padding: 0;
         background: #f0f0f0;
-    }
+      }
 
-    * {
-      box-sizing: border-box;
-    }
+      * {
+        box-sizing: border-box;
+      }
 
-    .slider {
-        
+      .slider {
         width: 90%;
         height: 75%;
         margin: 120px auto 0px auto;
-    }
-
-
-    .slick-slide img {
-        
-        max-width:40%;
-      margin: 0 auto
-    }
-      
-
-    .slick-prev:before,
-    .slick-next:before {
-        color: black;
-    }
-      
-      .slick-slide {
-           margin: 0px 20px;
-  background: #f0f0f0;
-  color: white;
- 
-  font-size: 30px;
-  font-family: "Arial";
-}
-      .header-gallery-container{
-          width: 100%;
-          background-color: #003152;
       }
 
-  </style>
-    <script>
+      .slick-slide img {
+        max-width:40%;
+        margin: 0 auto
+      }
 
+      .slick-prev:before,
+      .slick-next:before {
+        color: black;
+      }
+
+      .slick-slide {
+        margin: 0px 20px;
+        background: #f0f0f0;
+        color: white;
+
+        font-size: 30px;
+        font-family: "Arial";
+      }
+      .header-gallery-container{
+        width: 100%;
+        background-color: #003152;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!--#include virtual="../appearing-header.html"-->
+
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="about.html"> <img src="../assets/img/sh_bag_m.svg" />About</a>
+        <p>Share:</p>
+        <a href="#"> <img src="../assets/img/share_tw_m.svg" /> Twitter</a>
+        <a href="#"> <img src="../assets/img/share_fb_m.svg" />Facebook</a>
+      </div>
+    </div> <!--//myNav-->
+
+    <section class="slider">
+      <div><img src="images/gwr-01.jpg"></div>
+      <div><img src="images/gwr-02.jpg"></div>
+      <div><img src="images/gwr-03.jpg"></div>
+      <div><img src="images/gwr-04.jpg"></div>
+      <div><img src="images/gwr-05.jpg"></div>
+      <div><img src="images/gwr-06.jpg"></div>
+      <div><img src="images/gwr-07.jpg"></div>
+      <div><img src="images/gwr-08.jpg"></div>
+      <div><img src="images/gwr-09.jpg"></div>
+      <div><img src="images/gwr-10.jpg"></div>
+      <div><img src="images/gwr-11.jpg"></div>
+      <div><img src="images/gwr-12.jpg"></div>
+      <div><img src="images/gwr-13.jpg"></div>
+      <div><img src="images/gwr-14.jpg"></div>
+      <div><img src="images/gwr-15.jpg"></div>
+      <div><img src="images/gwr-16.jpg"></div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+      document.getElementById('myBtn2').style.display="none"; // because we include the header now, we have to hide the intro video play btn
+      var testurl = window.location.search;
+
+      $(".slider")
+      .slick({
+        dots:true,
+        responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: true,
+            centerMode: true,
+            dots: false,
+            slidesToShow: 1
+          }
+        }
+        ]
+      }).each(function() {
+        if( window.location.search ) {
+          var $slider = $(this),
+          sliderid = $slider.slick("getSlick").instanceUid,
+          queries = testurl.slice(1).split("&"),
+          checkQuery;
+          //console.log(sliderid);
+
+          for (query in queries) {
+            checkQuery = queries[query].split("=");
+            //console.log(checkQuery)
+              if (checkQuery[0] === "slick" + (sliderid + 1)) {
+                $slider.slick("slickGoTo", parseInt(checkQuery[1], 10) - 1, true);
+              }
+          }
+        }
+
+      });
+
+      function openNav() {
+        document.getElementById("myNav").style.display = "block";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.display = "none";
+      }
 
     </script>
-</head>
-<body>
-      <div class="appearing-header" aria-hidden="true">
-        <div class="story-header-index row">
-            <div class="small-4 columns">
-                <img class="float-left media-logo" src="../assets/img/logo_internazionale.png" width="200px" alt="Media Logo" />
-            </div>
-            <div class="small-4 columns text-center header-logo">
-               <a href="../home.html"> <img src="../assets/img/logo_w.svg" alt="Sewing Society Logo" /></a>
-            </div>
-            <div class="small-4 columns menu-icons hide-for-small-only">
-              
-                <a href="#"><img src="../assets/img/share_tw_w.svg" width="20px" /><span class="show-for-sr">Twitter</span></a>
-                <a href="#"><img src="../assets/img/share_fb_w.svg" width="10px" /><span class="show-for-sr">Facebook</span></a>
-               <a href="about.html"><img src="assets/img/sh_bag_w.svg" width="20px" /><span class="show-for-sr">Info</span></a>
-            </div>
-            <div class="medium-2 columns show-for-small-only">
-               
-            <a class="nav-mobile-menu" id="nav-toggle" onclick="openNav()">&#9776;</a>
-                   
-        </div>
-        </div>
-    </div>
-        
-       <div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-<a href="about.html"> <img src="../assets/img/sh_bag_m.svg" />About</a>
-    
-    <p>Share:</p>
-    <a href="#"> <img src="../assets/img/share_tw_m.svg" /> Twitter</a>
-    <a href="#"> <img src="../assets/img/share_fb_m.svg" />Facebook</a>
-      
-    
-  </div>
-</div>
 
- <section class="slider">
-  <div><img src="images/gwr-01.jpg"></div>
-  <div><img src="images/gwr-02.jpg"></div>
-  <div><img src="images/gwr-03.jpg"></div>
-  <div><img src="images/gwr-04.jpg"></div>
-     <div><img src="images/gwr-05.jpg"></div>
-     <div><img src="images/gwr-06.jpg"></div>
-     <div><img src="images/gwr-07.jpg"></div>
-     <div><img src="images/gwr-08.jpg"></div>
-     <div><img src="images/gwr-09.jpg"></div>
-     <div><img src="images/gwr-10.jpg"></div>
-     <div><img src="images/gwr-11.jpg"></div>
-     <div><img src="images/gwr-12.jpg"></div>
-     <div><img src="images/gwr-13.jpg"></div>
-     <div><img src="images/gwr-14.jpg"></div>
-     <div><img src="images/gwr-15.jpg"></div>
-     <div><img src="images/gwr-16.jpg"></div>
-</section>
-    
-
-
-
-    
-    
-    
-  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
-  <script type="text/javascript">
-       var testurl = window.location.search;
-       
-
-
-$(".slider")
-  
-    .slick({
-   dots:true,
-    responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: true,
-        centerMode: true,
-        dots: false,
-        slidesToShow: 1
-      }
-    }
-  ]
-      
-})
-  .each(function() {
-
-    if( window.location.search ) {
-    
-
-      var $slider = $(this),
-        sliderid = $slider.slick("getSlick").instanceUid,
-        //queries = window.location.search.slice(1).split("&"),
-        queries = testurl.slice(1).split("&"),
-        checkQuery;
-
-      console.log(sliderid);
-
-      for (query in queries) {
-        checkQuery = queries[query].split("=");
-        console.log(checkQuery)
-        if (checkQuery[0] === "slick" + (sliderid + 1)) {
-          $slider.slick("slickGoTo", parseInt(checkQuery[1], 10) - 1, true);
-        }
-      }
-    }
-
-  });
-   
-       function openNav() {
-    document.getElementById("myNav").style.display = "block";
-}
-
-function closeNav() {
-    document.getElementById("myNav").style.display = "none";
-}
-      
-     
-  </script>
-
-</body>
+  </body>
 </html>
