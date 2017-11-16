@@ -4374,7 +4374,13 @@ footer {
 
 footer p {
     margin: 0;
-    color: #f5f5f5
+    color: #f5f5f5;
+    font-size: 0.9em;
+}
+
+footer p img {
+  width: 50px;
+  margin-right: 1em;
 }
 
 .appearing-header {
@@ -4395,7 +4401,7 @@ footer p {
 .story-header {
     position: absolute;
     width: 100%;
-    background-color: #fff;
+    background-color: #d03022;
     padding-top: 30px;
     padding-bottom: 30px;
     height: 108px;
@@ -4741,21 +4747,15 @@ footer p {
    div.story-header {
     position: absolute;
     width: 100%;
-    background-color: #fff;
+    background-color: #d03022;
     padding-top: 10px;
     padding-bottom: 10px;
     height: 60px;
     z-index: 10000;
 }  
     div.story-header-index{
-       
-   
         height: 100px;
-        
     }
-    
-    
-    
     div.card--main {
         text-align: left;
         height: 400px;
@@ -4983,23 +4983,18 @@ footer p {
 }
 
 .nav-mobile-menu-story {
-
     position: absolute;
     margin: 10px 0px 0px 85%;
     font-size: 20px;
-    color: black;
+    color: #fff;
     top: 0;
     float: right;
 
 }
 
-
-
 .media-logo {
     padding-top: 10px;
 }
-
-
 
 .intro-header-banner {
      background-color:white;
@@ -5011,13 +5006,10 @@ footer p {
 .intro-header-banner h3 {
      font-size: 20px;
     letter-spacing: 5px;
-    
-    
 }
 .intro-header-banner p  {
     font-size: 17px;
      padding: 30px 50px 0px 50px;
-    
 }
 
 .page-stories {
