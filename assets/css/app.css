@@ -4388,6 +4388,7 @@ footer p img {
     width: 100%;
     background: #d03022; /*#191919*/;
     top: 0px;
+    z-index: 900;
     -webkit-transition: -webkit-transform 200ms ease-out;
     transition: -webkit-transform 200ms ease-out;
     transition: transform 200ms ease-out;
