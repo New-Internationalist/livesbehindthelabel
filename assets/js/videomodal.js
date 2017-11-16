@@ -1,7 +1,6 @@
 var modal = document.getElementById('myModal');
 var btn2 = document.getElementById("myBtn2");
 var span = document.getElementsByClassName("close")[0];
-var videobtn = document.getElementById('this-btn-open');
 var videocontent = document.getElementsByClassName("modal-video")[0];
 var videointro = document.getElementById("bg-video");
 
@@ -28,18 +27,4 @@ window.onclick = function(event) {
     videointro.pause(); 
     videointro.load();
   }
-}
-
-videobtn.onclick = function() {
-  videocontent.style.display = "block";
-  videointro.play(); 
-
-}
-
-function openNav() {
-  document.getElementById("myNav").style.display = "block";
-}
-
-function closeNav() {
-  document.getElementById("myNav").style.display = "none";
 }
