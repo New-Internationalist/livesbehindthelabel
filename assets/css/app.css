@@ -4247,8 +4247,8 @@ only screen and (min-resolution: 192dpi) and (min-width: 1024px) {
 }
 
 .menu-icons a {
-    margin-left: 50px;
-    padding: 5px
+    margin-left: 20px;
+    padding: 2px
 }
 
 .menu-icons a:first-child {
@@ -4721,7 +4721,6 @@ footer p img {
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {
-    
     div.description-overlay {
     position: absolute;
     width: 95%;
@@ -4802,7 +4801,11 @@ footer p img {
 }
 
 /* Medium and up */
-@media screen and (min-width: 40em) {}
+@media screen and (min-width: 40em) {
+    .menu-icons a {
+      margin-left: 20px;
+    }
+}
 
 /* Medium only */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
@@ -4814,7 +4817,12 @@ footer p img {
 }
 
 /* Large and up */
-@media screen and (min-width: 64em) {}
+@media screen and (min-width: 64em) {
+    .menu-icons a {
+      margin-left: 50px;
+    }
+
+}
 
 /* Large only */
 @media screen and (min-width: 64em) and (max-width: 74.9375em) {}
